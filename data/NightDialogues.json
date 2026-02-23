@@ -1,0 +1,3714 @@
+[
+    {
+        "group_id": "sample",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "这是对话目标说的话"
+    },
+    {
+        "group_id": "sample",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "PLAYER",
+        "text": "这是主角（审神者）说的话"
+    },
+    {
+        "group_id": "sample",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "这是选项内容|这里填写跳转的group_id"
+    },
+    {
+        "group_id": "sample",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "NONE",
+        "text": "这是纯旁白内容"
+    },
+    {
+        "group_id": "sample",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "JUMP",
+        "text": "跳转，详见sample_jump"
+    },
+    {
+        "group_id": "sample",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": 85,
+        "text": "这是指定id的角色说的话"
+    },
+    {
+        "group_id": "sample",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "V[20]",
+        "text": "这是变量20对应id的角色说的话"
+    },
+    {
+        "group_id": "sample",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "任意文本",
+        "text": "角色名为任意文本"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "sample_type",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "子分支type是sub，另外，type可以自行填写，起一个自定义标签的作用"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "sample_jump",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "跳转前的最后一段对话。"
+    },
+    {
+        "group_id": "sample_jump",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "JUMP",
+        "text": "这里填写条件判断的开关Sw[1]|这里填写跳转的group_id"
+    },
+    {
+        "group_id": "sample_jump",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "JUMP",
+        "text": "这种就是开关关闭时的跳转!Sw[2]|这里填写跳转的group_id"
+    },
+    {
+        "group_id": "sample_jump",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "JUMP",
+        "text": "如果以上都不符合条件，无条件跳转到的group_id，可以不填，就会结束对话"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "sample_chat_01",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "你是谁？"
+    },
+    {
+        "group_id": "sample_chat_01",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "PLAYER",
+        "text": "我是新来的审神者。"
+    },
+    {
+        "group_id": "sample_chat_01",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "哦，是你啊。"
+    },
+    {
+        "group_id": "sample_gift_01",
+        "actor_id": 1,
+        "min_love": 20,
+        "type": "gift",
+        "speaker": "PLAYER",
+        "text": "送给你。"
+    },
+    {
+        "group_id": "sample_gift_01",
+        "actor_id": 1,
+        "min_love": 20,
+        "type": "gift",
+        "speaker": "SELF",
+        "text": "居然是这个...谢谢。"
+    },
+    {
+        "group_id": "sample_chat_02",
+        "actor_id": 1,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "今晚风很大。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "主人，你怎么了？睡不着吗？"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "要聊聊天么？"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "你为什么会用那种眼神看我，难道是我的头发乱了？！"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "啊！请不要看！先别看我啦！！！"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "呼……好了。"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "认真的说，主人，我们其实还并不熟悉彼此。"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "所以深夜里这样聊天，仔细一想，怪怪的呢。"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "您这种认真的表情，真让人不知道该怎么接话。"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "今夜的话，就先到这里吧。"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "等等，我还有话想说|chat_85_01_02"
+    },
+    {
+        "group_id": "chat_85_01_01",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "那么，晚安|chat_85_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_85_01_02",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "嗯？你还有什么要问我吗？"
+    },
+    {
+        "group_id": "chat_85_01_02",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "你的指甲油还蛮好看的|chat_85_01_04"
+    },
+    {
+        "group_id": "chat_85_01_02",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "也许我们可以共枕|chat_85_01_05"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_85_01_03",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "晚安。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_85_01_04",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "这种客套话等我们变熟之后再说也不迟，主人。"
+    },
+    {
+        "group_id": "chat_85_01_04",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "再说，人类的视力，应该不足以在黑夜中分辨指甲油的颜色吧。"
+    },
+    {
+        "group_id": "chat_85_01_04",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "晚安啦，您还是早点休息吧。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_85_01_05",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……哈？"
+    },
+    {
+        "group_id": "chat_85_01_05",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "您刚刚说……想和我一起睡？"
+    },
+    {
+        "group_id": "chat_85_01_05",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我的工作范围可不包括“陪睡”哦。"
+    },
+    {
+        "group_id": "chat_85_01_05",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他看起来欲言又止，似乎有什么话想说，但没有说出口。"
+    },
+    {
+        "group_id": "chat_85_01_05",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "陪你共枕这种事，还是留给那些更懂怎么讨你欢心的刀吧。"
+    },
+    {
+        "group_id": "chat_85_01_05",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "Sw[5]|chat_85_01_05kid"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_85_01_05kid",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不过主人你，即使以人类来看也还是幼年吧？"
+    },
+    {
+        "group_id": "chat_85_01_05kid",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我听说人类的小孩子还是需要大人陪睡的。"
+    },
+    {
+        "group_id": "chat_85_01_05kid",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "如果你不介意我现在的样子，那我就坐在这里，陪你到睡着为止，怎\n么样？"
+    },
+    {
+        "group_id": "chat_85_01_05kid",
+        "actor_id": 85,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "快点回床上睡觉啦，不然太阳晒屁股了还起不来，不羞羞吗？"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_95_01_01",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "……已经是这个时间了，还不打算休息吗？\n作为近侍，我有义务提醒你注意身体。"
+    },
+    {
+        "group_id": "chat_95_01_01",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "别盯着我看。明明有那么多华丽的名刀可以获得，可以要求陪侍，\n偏偏选我这种仿品当近侍，你还真是……品味独特。"
+    },
+    {
+        "group_id": "chat_95_01_01",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "（拽他的斗篷）|chat_95_01_02"
+    },
+    {
+        "group_id": "chat_95_01_01",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "（盯着他看）|chat_95_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_95_01_02",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "没，没什么好看的！"
+    },
+    {
+        "group_id": "chat_95_01_02",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "请您不要再拽了，这……"
+    },
+    {
+        "group_id": "chat_95_01_02",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "呜！请不要看！……没有什么好看的！"
+    },
+    {
+        "group_id": "chat_95_01_02",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "求您了！"
+    },
+    {
+        "group_id": "chat_95_01_02",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "松开他的斗篷|chat_95_01_04"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_95_01_03",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哪怕被你这种眼神注视着，我也是仿品，不会变成你期待的那种作品。"
+    },
+    {
+        "group_id": "chat_95_01_03",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他猛地拉低了兜帽，指尖因为用力而由红转白。"
+    },
+    {
+        "group_id": "chat_95_01_03",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "求您不要再看我的脸了。"
+    },
+    {
+        "group_id": "chat_95_01_03",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "不再炽热地盯着他看|chat_95_01_04"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_95_01_04",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "真是个……不可理喻的主人。"
+    },
+    {
+        "group_id": "chat_95_01_04",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "还有啊，您该休息了，请不要一直向我身边挤。"
+    },
+    {
+        "group_id": "chat_95_01_04",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "睡不着，我需要你守护我|chat_95_01_05"
+    },
+    {
+        "group_id": "chat_95_01_04",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "也许我们可以共枕|chat_95_01_06"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_95_01_05",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "因为我也是斩杀过怪物的刀，所以要我守护你的梦境吗？"
+    },
+    {
+        "group_id": "chat_95_01_05",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "那我就在这里守着好了。"
+    },
+    {
+        "group_id": "chat_95_01_05",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "请，请您不要再挤过来了，会从床上掉下去的。"
+    },
+    {
+        "group_id": "chat_95_01_05",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "晚安。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_95_01_06",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……"
+    },
+    {
+        "group_id": "chat_95_01_06",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "…………"
+    },
+    {
+        "group_id": "chat_95_01_06",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "………………"
+    },
+    {
+        "group_id": "chat_95_01_06",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哈……？！"
+    },
+    {
+        "group_id": "chat_95_01_06",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "您是在开玩笑吧。"
+    },
+    {
+        "group_id": "chat_95_01_06",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不，不是吗？"
+    },
+    {
+        "group_id": "chat_95_01_06",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "!Sw[5]|chat_95_01_06notKid"
+    },
+    {
+        "group_id": "chat_95_01_06",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "Sw[5]|chat_95_01_06Kid"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_95_01_06notKid",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他肉眼可见地惊慌起来。"
+    },
+    {
+        "group_id": "chat_95_01_06notKid",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "如，如果是为您守夜什么的话，那个是可以的……"
+    },
+    {
+        "group_id": "chat_95_01_06notKid",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "但是那个，不，那个……"
+    },
+    {
+        "group_id": "chat_95_01_06notKid",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "你觉得他简直快把自己烧退火了。"
+    },
+    {
+        "group_id": "chat_95_01_06notKid",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "那退一步来说，你在这里为我守夜吧。|chat_95_01_07"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_95_01_07",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他有些局促地调整了一下刀鞘的位置，\n在离你床铺不远不近的地方坐了下来。"
+    },
+    {
+        "group_id": "chat_95_01_07",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "谢谢您，愿意让我这个仿品来做您的守护。"
+    },
+    {
+        "group_id": "chat_95_01_07",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我会一直守在这里，直到您醒来。"
+    },
+    {
+        "group_id": "chat_95_01_07",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "晚安。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_95_01_06Kid",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……说的也是，您现在还没有到元服或是着裳的年龄吧。"
+    },
+    {
+        "group_id": "chat_95_01_06Kid",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我也是斩杀过怪物的刀，好歹可以守护您的梦境。"
+    },
+    {
+        "group_id": "chat_95_01_06Kid",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我就在这里，在太阳升起，您从美梦中醒来之前，哪都不会去。"
+    },
+    {
+        "group_id": "chat_95_01_06Kid",
+        "actor_id": 95,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "晚安。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_101_01_01",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "……还没睡着吗？我以为主公在真品的守护下，\n能够获得最高规格的安眠。"
+    },
+    {
+        "group_id": "chat_101_01_01",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "难道是我太亮眼了吗？"
+    },
+    {
+        "group_id": "chat_101_01_01",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "（拨弄他的头发）|chat_101_01_02"
+    },
+    {
+        "group_id": "chat_101_01_01",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "在这样的暮色里，你看起来更加美丽了呢|chat_101_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_101_01_02",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "啊，我的头发可不是供您亵玩的玩具。"
+    },
+    {
+        "group_id": "chat_101_01_02",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不过……如果您是想确认真品的质感，我倒是不介意。"
+    },
+    {
+        "group_id": "chat_101_01_02",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "主公能够感受到吗？\n这不仅是美，更是真品所具的，足以斩断一切的锋芒。"
+    },
+    {
+        "group_id": "chat_101_01_02",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "但是我看着你就睡不着了呢|chat_101_01_04"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_101_01_03",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我就将之理解为您对我的赞美吧。"
+    },
+    {
+        "group_id": "chat_101_01_03",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "真品的光辉可是不会因为周围的环境而褪色的。"
+    },
+    {
+        "group_id": "chat_101_01_03",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "嗯……您为什么那么注视着我？"
+    },
+    {
+        "group_id": "chat_101_01_03",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "越是看你，越是睡不着呢|chat_101_01_04"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_101_01_04",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……"
+    },
+    {
+        "group_id": "chat_101_01_04",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "您这是什么话啊。"
+    },
+    {
+        "group_id": "chat_101_01_04",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "这可不是一位称职的审神者该有的行为，太失礼了。"
+    },
+    {
+        "group_id": "chat_101_01_04",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "那我向你道歉|chat_101_01_05"
+    },
+    {
+        "group_id": "chat_101_01_04",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "可是我想要和你共枕|chat_101_01_06"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_101_01_05",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "你很重视真品呢，不过这么贸然地道歉可不是主公应当做的。"
+    },
+    {
+        "group_id": "chat_101_01_05",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "审神者是本丸的统帅，言行代表着整个本丸的品行。"
+    },
+    {
+        "group_id": "chat_101_01_05",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "如果您连维持自身威严的觉悟都没有，\n只会在事后用这种不入流的言辞搪塞他人……"
+    },
+    {
+        "group_id": "chat_101_01_05",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "Sw[5]|chat_101_01_05Kid"
+    },
+    {
+        "group_id": "chat_101_01_05",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "!Sw[5]|chat_101_01_05notKid"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_101_01_05Kid",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "啊，算了，您毕竟是比浦岛虎彻还要小得多的小孩子。"
+    },
+    {
+        "group_id": "chat_101_01_05Kid",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我不应当对您这样年纪的人类太过苛刻。"
+    },
+    {
+        "group_id": "chat_101_01_05Kid",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "让我来为您守夜吧，既然您睡不着的话。"
+    },
+    {
+        "group_id": "chat_101_01_05Kid",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "晚安，今晚破例让您独占这份真品的光辉。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_101_01_05notKid",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……我是不是应当重新评估，\n您是否真的具备驾驭这本丸、以及驾驭我的器量呢？"
+    },
+    {
+        "group_id": "chat_101_01_05notKid",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "既然选择了真品作为您的力量，就请展现出与之匹配的品格。"
+    },
+    {
+        "group_id": "chat_101_01_05notKid",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "比如，现在摒除杂念，早点休息。"
+    },
+    {
+        "group_id": "chat_101_01_05notKid",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "日后，我也一直会注视您的。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_101_01_06",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……"
+    },
+    {
+        "group_id": "chat_101_01_06",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "如此坦诚，勇气可嘉。"
+    },
+    {
+        "group_id": "chat_101_01_06",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "既然您已经这么开诚布公地向我发出请求了，我也就坦率地回答吧。"
+    },
+    {
+        "group_id": "chat_101_01_06",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不可以。"
+    },
+    {
+        "group_id": "chat_101_01_06",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "这种过度的亲昵……已经超出了‘礼仪’的范畴。"
+    },
+    {
+        "group_id": "chat_101_01_06",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "若我此刻顺从了您的任性，\n我便不再是值得您信赖的真品，而成了纵容您堕落的罪人。"
+    },
+    {
+        "group_id": "chat_101_01_06",
+        "actor_id": 101,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "请维持真品之主应有的尊严入睡吧。\n我不会与您共枕，但依然为您守夜。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_89_01_01",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "主公，夜深了而不就寝，是有何事萦绕在心吗？"
+    },
+    {
+        "group_id": "chat_89_01_01",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "……不如由我来为你诵读几首和歌如何？"
+    },
+    {
+        "group_id": "chat_89_01_01",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "听着这些流传千年的词句，或许能让你在这不眠之夜寻得一丝雅意。"
+    },
+    {
+        "group_id": "chat_89_01_01",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "（听他吟诵和歌）|chat_89_01_02"
+    },
+    {
+        "group_id": "chat_89_01_01",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "也许可以做一些别的事情呢|chat_89_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_89_01_02",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "歌仙兼定点燃了静雅的熏香。"
+    },
+    {
+        "group_id": "chat_89_01_02",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "花の色は\n移りにけりな\nいたづらに"
+    },
+    {
+        "group_id": "chat_89_01_02",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "わが身世にふる\nながめせし間に"
+    },
+    {
+        "group_id": "chat_89_01_02",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "花色已然褪，徒然度此身，\n长雨连绵中，春色早消沉。"
+    },
+    {
+        "group_id": "chat_89_01_02",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "此乃是平安时代初期六歌仙之一，小野小町的词句。"
+    },
+    {
+        "group_id": "chat_89_01_02",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "她也许是想借此感叹人生的不如意吧，听说她后来过得很是落魄。"
+    },
+    {
+        "group_id": "chat_89_01_02",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不过，既然忧虑也无法阻止时光流转，不如在这良夜优雅地入梦。"
+    },
+    {
+        "group_id": "chat_89_01_02",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "好像内心平静了一些（尝试闭上眼睛）|chat_89_01_04"
+    },
+    {
+        "group_id": "chat_89_01_02",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "可我需要的是更亲近的陪伴|chat_89_01_05"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哦呀，主公，您不会指的是那种事情吧。"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "您或许认为月下邀约是一种风流雅事，但您现在的行径，\n只能称为是一种拙劣的模仿。"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我们之间并没有到达那种氛围，关系尚且不够。\n贸然地模仿，就像乌鸦学浮水。"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "歌仙兼定离你稍稍远了一些。"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "让我点上一支熏香，为您吟诵和歌吧。"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "这样，您的心或许可以平静下来。"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "歌仙兼定点燃了静雅的熏香。"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "袖振れば 移る香りに\n月冴えて\n乱るる心 風にまかせん"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "振袖传幽韵，冷月照寒光。\n乱绪由心起，随风寄远方。"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "这似乎是他自己即兴的吟诵。"
+    },
+    {
+        "group_id": "chat_89_01_03",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "好像内心平静了一些（尝试闭上眼睛）|chat_89_01_04"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_89_01_04",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "月色与幽香，掩盖了他杀伐的本性。"
+    },
+    {
+        "group_id": "chat_89_01_04",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "房间里安静下来，你的思绪也渐渐远去，陷入沉眠。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_89_01_05",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "更……亲近？"
+    },
+    {
+        "group_id": "chat_89_01_05",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "Sw[5]|chat_89_01_05Kid"
+    },
+    {
+        "group_id": "chat_89_01_05",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "!Sw[5]|chat_89_01_05notKid"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_89_01_05Kid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "看着主公这副模样，我不禁想起了一位故人。"
+    },
+    {
+        "group_id": "chat_89_01_05Kid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "也许是夜色深了，你并未看清他的表情。"
+    },
+    {
+        "group_id": "chat_89_01_05Kid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我在床边守护您，这样可以吗？\n将冷硬的刀剑抱在怀中，可未必能得到好梦。"
+    },
+    {
+        "group_id": "chat_89_01_05Kid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他坐在你的床头，像一只月光下的蝴蝶。"
+    },
+    {
+        "group_id": "chat_89_01_05Kid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "不过蝴蝶好像不会在夜间行动……"
+    },
+    {
+        "group_id": "chat_89_01_05Kid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "晚安。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "您或许认为月下邀约是一种风流雅事，但您现在的行径，\n只能称为是一种拙劣的模仿。"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我们之间并没有到达那种氛围，关系尚且不够。\n贸然地模仿，就像乌鸦学浮水。"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "歌仙兼定离你稍稍远了一些。"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "让我再为您吟诵和歌吧。"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "这样，您的心或许可以平静下来。"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "歌仙兼定拨弄了一下熏香，重新清了清嗓子。"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "袖振れば 移る香りに\n月冴えて\n乱るる心 風にまかせん"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "振袖传幽韵，冷月照寒光。\n乱绪由心起，随风寄远方。"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "这似乎是他自己即兴的吟诵。"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "月色与幽香，掩盖了他杀伐的本性。"
+    },
+    {
+        "group_id": "chat_89_01_05notKid",
+        "actor_id": 89,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "房间里安静下来，你的思绪也渐渐远去，陷入沉眠。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_93_01_01",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "NONE",
+        "text": "陆奥守吉行似乎在月光下摆弄着他的左轮枪。"
+    },
+    {
+        "group_id": "chat_93_01_01",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "NONE",
+        "text": "不得不说，这画面还挺……别具一格的。"
+    },
+    {
+        "group_id": "chat_93_01_01",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "哦，你还没睡吗？"
+    },
+    {
+        "group_id": "chat_93_01_01",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "你在做什么？|chat_93_01_02"
+    },
+    {
+        "group_id": "chat_93_01_01",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "你知道……新时代的人际关系吗？|chat_93_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_93_01_02",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "喔，这个啊，咱在保养这把枪。"
+    },
+    {
+        "group_id": "chat_93_01_02",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "虽说刀剑还没彻底过时，但这玩意儿才是主角。\n如果关键时刻卡壳了，那咱可就丢人丢到大海对面去了！"
+    },
+    {
+        "group_id": "chat_93_01_02",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "他说着，把拆卸下来的零件摆弄给你看。"
+    },
+    {
+        "group_id": "chat_93_01_02",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "那个，我没有你那么好的夜视力。"
+    },
+    {
+        "group_id": "chat_93_01_02",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "啊，这样啊，那我讲给你听？反正你也刚好睡不着嘛。"
+    },
+    {
+        "group_id": "chat_93_01_02",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "好啊！|chat_93_01_04"
+    },
+    {
+        "group_id": "chat_93_01_02",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "我还是想你陪我睡一会|chat_93_01_05"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_93_01_03",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哈哈哈，你怎么突然问起这么深奥的事情。"
+    },
+    {
+        "group_id": "chat_93_01_03",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "你是指那种互通有无的平等关系对吧？"
+    },
+    {
+        "group_id": "chat_93_01_03",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "你觉得他在回避你的问题，但你找不到证据。\n毕竟是你自己先拐弯抹角的。"
+    },
+    {
+        "group_id": "chat_93_01_03",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我觉得这很好啊！\n不再是藏着掖着，而是把底牌都亮出来，知己知彼，坦诚相待，\n才能共同进退。"
+    },
+    {
+        "group_id": "chat_93_01_03",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "你也想和咱像真正的伙伴一样交流的吧。"
+    },
+    {
+        "group_id": "chat_93_01_03",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "如果你有什么烦心事，尽管跟咱说！\n咱可是很懂怎么当一个合格的盟友的！"
+    },
+    {
+        "group_id": "chat_93_01_03",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "我睡不着|chat_93_01_06"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_93_01_04",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "陆奥守吉行给你讲了很多枪械的知识。"
+    },
+    {
+        "group_id": "chat_93_01_04",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "讲着讲着，他讲到寺田屋事件。"
+    },
+    {
+        "group_id": "chat_93_01_04",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……那一次他借助手枪挡住了十个人的袭击，成功脱逃了呢……"
+    },
+    {
+        "group_id": "chat_93_01_04",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "不知道是不是想到了什么，他的神色似乎有些暗淡，\n心不在焉地摸着手里的左轮枪。"
+    },
+    {
+        "group_id": "chat_93_01_04",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "你……也该早点休息了。"
+    },
+    {
+        "group_id": "chat_93_01_04",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "晚安？"
+    },
+    {
+        "group_id": "chat_93_01_04",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "祝您好梦。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_93_01_05",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……哈？"
+    },
+    {
+        "group_id": "chat_93_01_05",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "Sw[5]|chat_93_01_05Kid"
+    },
+    {
+        "group_id": "chat_93_01_05",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "!Sw[5]|chat_93_01_05notKid"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_93_01_05notKid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "你还真会开玩笑。咱还没跟你熟到可以钻一个被窝的程度吧？"
+    },
+    {
+        "group_id": "chat_93_01_05notKid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "再说，咱睡相可差了。"
+    },
+    {
+        "group_id": "chat_93_01_05notKid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "万一翻个身把你踢下去，那可就成了“刀剑男士谋杀主人”啦。"
+    },
+    {
+        "group_id": "chat_93_01_05notKid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不过呢，为你守夜咱还是做得到的。"
+    },
+    {
+        "group_id": "chat_93_01_05notKid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他坐在你的床边，保持着一个恰好不近不远的距离。"
+    },
+    {
+        "group_id": "chat_93_01_05notKid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "祝您好梦。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_93_01_05Kid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "真是拿你没办法。既然你还是个孩子，那就另当别论了。"
+    },
+    {
+        "group_id": "chat_93_01_05Kid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "下不为例哦，已经能够成为审神者，那就该做个成熟的小大人咯。"
+    },
+    {
+        "group_id": "chat_93_01_05Kid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他爽快地放下了手中的枪，开始给你讲起那些道听途说的万国故事。"
+    },
+    {
+        "group_id": "chat_93_01_05Kid",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "不知不觉间，你的思绪被他带向了遥远的海岸线，\n伴随着他的声音慢慢进入了梦乡。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_93_01_06",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他露出一抹“计划通”的坏笑。"
+    },
+    {
+        "group_id": "chat_93_01_06",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "要不，咱给你讲讲故事吧，这样你脑子里就不会有奇怪的念头啦。"
+    },
+    {
+        "group_id": "chat_93_01_06",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "而且，这也是知己知彼的第一步。"
+    },
+    {
+        "group_id": "chat_93_01_06",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "有些事情，要更加了解了以后才可以做。"
+    },
+    {
+        "group_id": "chat_93_01_06",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他爽快地放下了手中的枪，开始给你讲起了故事。\n从旧主的家宅八卦，到道听途说的万国传闻。"
+    },
+    {
+        "group_id": "chat_93_01_06",
+        "actor_id": 93,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "不知不觉间，你的思绪被他带向了遥远的海岸线，\n伴随着他的声音慢慢进入了梦乡。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_3_01_01",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "NONE",
+        "text": "夜色渐深，万籁俱寂，只有偶尔的虫鸣和风声。\n三日月宗近在离床铺稍远的位置，静静地凝视着窗外的月色。"
+    },
+    {
+        "group_id": "chat_3_01_01",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "NONE",
+        "text": "你一有所动作，他就回过头来，看向你的方向。"
+    },
+    {
+        "group_id": "chat_3_01_01",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "哈哈哈，睡不着吗？即便闭着眼，呼吸声也出卖了你啊。"
+    },
+    {
+        "group_id": "chat_3_01_01",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "NONE",
+        "text": "你无奈地睁开眼。"
+    },
+    {
+        "group_id": "chat_3_01_01",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "睡不着。|chat_3_01_02"
+    },
+    {
+        "group_id": "chat_3_01_01",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "平安时代的夜晚，是怎样的？|chat_3_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_3_01_02",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "啊，是哦，主公晚上喝了不少茶。"
+    },
+    {
+        "group_id": "chat_3_01_02",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "如果是人类的话，睡不着也是理所应当的吧。"
+    },
+    {
+        "group_id": "chat_3_01_02",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "总之现在是睡不着了。"
+    },
+    {
+        "group_id": "chat_3_01_02",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "我们，能聊聊天吗？|chat_3_01_04"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_3_01_03",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哈哈哈，平安时代的夜晚吗？\n那可真是个……连空气都显得比现在沉重许多的时代啊。"
+    },
+    {
+        "group_id": "chat_3_01_03",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "听说那是个百鬼夜行的时代，会很可怕么？"
+    },
+    {
+        "group_id": "chat_3_01_03",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "可怕？在我看来，可能反而是挺热闹的吧。"
+    },
+    {
+        "group_id": "chat_3_01_03",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "当时的黑夜，浓得像是绸缎，仿佛能将整个人都吞噬。\n烛火到不了的地方，便是“彼方”的领地。"
+    },
+    {
+        "group_id": "chat_3_01_03",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "妖怪、怨灵、或是无法安息的执念。\n它们就宿在庭院的阴影里，或是牛车的檐下。"
+    },
+    {
+        "group_id": "chat_3_01_03",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "你在黑夜中听到的衣襟摩擦声，可能是谁家的恋念思慕，\n也可能……"
+    },
+    {
+        "group_id": "chat_3_01_03",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "哇哇哇不要说了啊！|chat_3_01_05"
+    },
+    {
+        "group_id": "chat_3_01_03",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "也可能？|chat_3_01_06"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_3_01_04",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "好啊好啊，聊什么都甚好。"
+    },
+    {
+        "group_id": "chat_3_01_04",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "不如，讲讲平安时代的夜晚吧。"
+    },
+    {
+        "group_id": "chat_3_01_04",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "chat_3_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_3_01_05",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哈哈哈哈哈，主公不必担心，那已经是很久远的过去了。"
+    },
+    {
+        "group_id": "chat_3_01_05",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "久远到灵力的连接都难以跨越的，漫长的时空维度。"
+    },
+    {
+        "group_id": "chat_3_01_05",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "是啊，那已经是千年之前，时空的干扰格外强烈。\n如果审神者不跟随出阵，甚至会和出阵的刀剑男士永远失去联系。"
+    },
+    {
+        "group_id": "chat_3_01_05",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "这世上可能也只有几位前辈能够坐镇本丸，就让灵力跨越千年吧。"
+    },
+    {
+        "group_id": "chat_3_01_05",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "今月仍是古时月，今人已非古时人。\n平安时代的黑夜，干扰不到如今的主公的。"
+    },
+    {
+        "group_id": "chat_3_01_05",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "嘛，若是内心仍不平静，便让老爷子我为你守夜吧。"
+    },
+    {
+        "group_id": "chat_3_01_05",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他回到了对话开始之前，那个离你稍远的位置"
+    },
+    {
+        "group_id": "chat_3_01_05",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "今夜好梦。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_3_01_06",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "也可能是在引诱你误入彼世哟。"
+    },
+    {
+        "group_id": "chat_3_01_06",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "或许呢，你能够在一片漆黑之中闻到一缕幽香。"
+    },
+    {
+        "group_id": "chat_3_01_06",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "它呢，可能会带你回到此世，回到你熟悉的人身边。\n也可能是一个陷阱，引诱你，向更深处前行，直到……"
+    },
+    {
+        "group_id": "chat_3_01_06",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "迷失在黑夜里，沉眠在永夜之中。"
+    },
+    {
+        "group_id": "chat_3_01_06",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "嘛，那是很久以前的事情了。"
+    },
+    {
+        "group_id": "chat_3_01_06",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "今月仍是古时月，今人已非古时人。\n平安时代的黑夜，干扰不到如今的主公的。"
+    },
+    {
+        "group_id": "chat_3_01_06",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "看起来主公还是想继续呢，那就请继续听我这老头子唠叨吧。"
+    },
+    {
+        "group_id": "chat_3_01_06",
+        "actor_id": 3,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "直到黎明的到来。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_7_01_01",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "……夜已经深了，主公。若是还不入眠，明日恐怕会精神不振哦。"
+    },
+    {
+        "group_id": "chat_7_01_01",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "毕竟我是近侍，我有义务照看好你的身体。"
+    },
+    {
+        "group_id": "chat_7_01_01",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "我……感觉不对劲。|chat_7_01_02"
+    },
+    {
+        "group_id": "chat_7_01_01",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "我可以离你更近一些吗？|chat_7_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_7_01_02",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哦呀，难道是在黑暗中感受到了什么不安的气息吗？"
+    },
+    {
+        "group_id": "chat_7_01_02",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他温和地注视着你，付丧神的眼眸在夜色中熠熠闪耀。"
+    },
+    {
+        "group_id": "chat_7_01_02",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "既然这样，让我为你稍微进行一些驱魔仪式吧。"
+    },
+    {
+        "group_id": "chat_7_01_02",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "祛除灾祸，净化污秽……"
+    },
+    {
+        "group_id": "chat_7_01_02",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他轻声吟诵着。"
+    },
+    {
+        "group_id": "chat_7_01_02",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哦，好了，这样的话周围的一切就重归清净了。"
+    },
+    {
+        "group_id": "chat_7_01_02",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "请主公再闭上眼睛，感受一下吧。"
+    },
+    {
+        "group_id": "chat_7_01_02",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "这次一定能获得，无忧的安眠。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "当然。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他靠近你，指尖抚摸上你的额头。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "原来如此……看来确实有些“心火”在作祟呢。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "跨越礼制的界限可不是什么值得称赞的行为，那会招来邪气。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "但主上只是个爱撒娇的孩子，不是么？"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "你想了想他的年龄，又想了想自己。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他把你称为“孩子”，好像没什么不对的。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "虽然是战斗的刀剑，但我最擅长的其实还是祛除污秽和灾祸。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "让我将清净重新为你带回。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "他轻声吟诵着祛除灾祸的咒语。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "周围似乎轻松了许多。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "请主公再闭上眼睛，感受一下吧。"
+    },
+    {
+        "group_id": "chat_7_01_03",
+        "actor_id": 7,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "这次一定能获得，无忧的安眠。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_91_01_01",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "……嗯？还没睡吗，主公。"
+    },
+    {
+        "group_id": "chat_91_01_01",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "是被外面的风声吵醒了？\n别担心，作为近侍，我可是又强又可靠的，尽管安心睡吧。"
+    },
+    {
+        "group_id": "chat_91_01_01",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "PLAYER",
+        "text": "啊，其实是睡不着。"
+    },
+    {
+        "group_id": "chat_91_01_01",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "PLAYER",
+        "text": "想和你聊会天。"
+    },
+    {
+        "group_id": "chat_91_01_01",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "坐到他身边去|chat_91_01_02"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_91_01_02",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "喂、喂……！虽然我是不介意和你多聊会儿，但这距离也太近了吧？"
+    },
+    {
+        "group_id": "chat_91_01_02",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "现在的审神者都这么自来熟吗？我们才刚认识没几天吧。"
+    },
+    {
+        "group_id": "chat_91_01_02",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "真是服了你了。既然这么精神，那我就给你讲一讲——"
+    },
+    {
+        "group_id": "chat_91_01_02",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "讲什么？|chat_91_01_03"
+    },
+    {
+        "group_id": "chat_91_01_02",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "CHOICE",
+        "text": "趁机再靠近一点|chat_91_01_04"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "当然是土方先生的事情啦。"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "要说起那个人啊……那可是个严厉到被叫做“鬼之副长”的家伙。"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哪怕时代已经不要武士了，哪怕所有人都说那种战斗毫无意义……"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "他也战斗到最后一刻……"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "啊，好像露出了很不帅气的一面。"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "你在哭？"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "主公，你和国广一样，在这种时候很烦人啊。"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他深吸了一口气，又恢复了平常的神色。"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……喂，主公。"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "虽然现在的世界和那时候不同了，但你一定要成为，不，\n一定会成为一个强大的审神者。"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "毕竟，我可是你最强、最帅气的部下。你要是太弱，我会很困扰的。"
+    },
+    {
+        "group_id": "chat_91_01_03",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "所以，还是早点睡觉吧，人类要早睡早起才能身体好喔。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哇啊！你、你在摸哪儿呢！"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "就算我很帅，就算你是主公，这种行为也太失礼了吧！"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他一下子恢复了和你之间的距离。"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "既然你完全没有睡意，那就没办法了。"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "为了平复你的心情，让你能产生作为主公的觉悟，\n我就破例为你吟诵一段我刚想出来的俳句吧。"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "和泉守兼定清了清嗓子。"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "深夜月影斜，\n近侍在此莫心焦，\n请您睡好觉。"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "……"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……喂，那是什么表情？"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "如果……堀川国广在的话，可能会鼓掌吧。"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "啊，这不是挺风雅的吗？"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "……我觉得我想睡觉了。"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "可以一起吗？"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "Sw[5]|chat_91_01_04Kid"
+    },
+    {
+        "group_id": "chat_91_01_04",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "!Sw[5]|chat_91_01_04notKid"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_91_01_04Kid",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……真是拿你没办法。"
+    },
+    {
+        "group_id": "chat_91_01_04Kid",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "毕竟主公作为人类还是小鬼头啊，怕黑也是可以理解的。"
+    },
+    {
+        "group_id": "chat_91_01_04Kid",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "下不为例喔。我就坐在你旁边，手借给你抓着总行了吧？"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_91_01_04notKid",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不行！"
+    },
+    {
+        "group_id": "chat_91_01_04notKid",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "等我们再熟一点……不，没这种可能！"
+    },
+    {
+        "group_id": "chat_91_01_04notKid",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "总之，不行就是不行！"
+    },
+    {
+        "group_id": "chat_91_01_04notKid",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他手忙脚乱，不由分说地把你按回被子里，然后躲出去老远。"
+    },
+    {
+        "group_id": "chat_91_01_04notKid",
+        "actor_id": 91,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "不过尽管如此，他还是尽职尽责地为你守夜。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_87_01_01",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "您还没睡吗？主人。"
+    },
+    {
+        "group_id": "chat_87_01_01",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "如果是因为认生睡不着，我可以去门外守着。"
+    },
+    {
+        "group_id": "chat_87_01_01",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "其实我是想和你聊天|chat_87_01_02"
+    },
+    {
+        "group_id": "chat_87_01_01",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "很冷，睡不着，你可以和我共枕吗？|chat_87_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "聊天吗？既然是命令的话，陪您聊天也是可以的。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不过我没有那么健谈。\n如果是冲田君的话，大概会有很多话可以聊吧。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "他总是在笑着的，很开朗，很活泼，和每个人关系都很友好。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "尤其是在笑的时候，会露出虎牙，看起来就像邻家的少年。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "听起来很温柔呢。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "是啊，非常温柔……\n但正因如此，他战斗时的样子才更加令人无法移开视线。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "当笑容从那张温柔的脸上褪去，化身为冰冷如修罗的刽子手……"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他的手覆在本体的刀柄上，指尖因用力而微微泛白。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "咳，你说得太远了。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "啊，抱歉。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我不该在您面前提起这些。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "闲聊也该到此为止了主人，请闭上眼睛吧。"
+    },
+    {
+        "group_id": "chat_87_01_02",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "今夜，我会守护您的梦境。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_87_01_03",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "共枕……吗？这种事，我还是第一次被要求呢。"
+    },
+    {
+        "group_id": "chat_87_01_03",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "但是，不行哦。"
+    },
+    {
+        "group_id": "chat_87_01_03",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我可是很难被驾驭的。"
+    },
+    {
+        "group_id": "chat_87_01_03",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "刀剑就应当有刀剑的样子，从来也没有听说过有谁，\n会整夜地怀抱刀剑入眠呢。"
+    },
+    {
+        "group_id": "chat_87_01_03",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "如果您再这样胡闹的话……"
+    },
+    {
+        "group_id": "chat_87_01_03",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "Sw[5]|chat_87_01_03Kid"
+    },
+    {
+        "group_id": "chat_87_01_03",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "!Sw[5]|chat_87_01_03notKid"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_87_01_03Kid",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他轻轻叹了口气。"
+    },
+    {
+        "group_id": "chat_87_01_03Kid",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我的容忍也是有限度的哦。"
+    },
+    {
+        "group_id": "chat_87_01_03Kid",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "今晚我会一直守您身边的，不会离开，请安心睡吧。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_87_01_03notKid",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "我可能会忍不住，想把您那乱来的脑袋砍下来呢。呵呵。"
+    },
+    {
+        "group_id": "chat_87_01_03notKid",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他的嘴巴笑着，眼神却冰冷，让你感到脊背发凉。"
+    },
+    {
+        "group_id": "chat_87_01_03notKid",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "开玩笑的啦，我是不会把您怎么样的。"
+    },
+    {
+        "group_id": "chat_87_01_03notKid",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "闲聊也该到此为止了主人，请闭上眼睛吧。"
+    },
+    {
+        "group_id": "chat_87_01_03notKid",
+        "actor_id": 87,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "祝您好梦。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_11_01_01",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "NONE",
+        "text": "今剑正盘腿坐在门廊边，不安分地晃动着脚上的木屐。"
+    },
+    {
+        "group_id": "chat_11_01_01",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "主公大人，还没有睡吗？"
+    },
+    {
+        "group_id": "chat_11_01_01",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "SELF",
+        "text": "是因为外面的风声太大，吵到您了吗？"
+    },
+    {
+        "group_id": "chat_11_01_01",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "是想和你聊天|chat_11_01_02"
+    },
+    {
+        "group_id": "chat_11_01_01",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "talk",
+        "speaker": "CHOICE",
+        "text": "外面太冷了，要不要一起钻被子？|chat_11_01_03"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "聊天？好呀！虽然这种时候应该安静地睡觉……"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "但是主公大人看起来很有精神的样子。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "这样的话，聊一聊也无所谓吧。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "窗外的远山处，隐约有一团橙色的流光一闪而过。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "你知道那是灵力波动带来的自然现象。\n看起来还有点像流星。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哇，主公大人您看到了吗？刚才那个，是不是很像天狗火。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "天狗火？"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "那是天狗在晚上赶路时点的灯笼哦！"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "“呼——”的一下，火球就会排成一排飞过去，\n鞍马山上的天狗就喜欢点这样的灯笼哟。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "虽然义经公见到了并不会多说什么，\n但我知道，那一定是天狗同伴在叫我过去玩！"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "今剑脸上露出了怀念又神气的笑容。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "说起来……如果是现在的话，我也能变出天狗火来吗？"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "不不不你不能！"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "你连忙阻止，毕竟谁也不想屋子被火烧掉。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "那我可不可以去水边玩火？这样就不会烧起来。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "PLAYER",
+        "text": "不要。你忘了吗，碰到天狗火的人类会生病的。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "啊，这样啊……"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "今剑重新坐回了阴影处，你也躺了回去，闭上眼睛。"
+    },
+    {
+        "group_id": "chat_11_01_02",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "……晚安，主公大人。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_11_01_03",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "哎？！一起进被子里吗？"
+    },
+    {
+        "group_id": "chat_11_01_03",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不行不行，我现在可是主公大人的守卫。"
+    },
+    {
+        "group_id": "chat_11_01_03",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "如果我也睡着了，万一有坏人冲进来怎么办？我得在这里看着才行！"
+    },
+    {
+        "group_id": "chat_11_01_03",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "难道说……主公大人其实是年纪太小，害怕一个人睡觉吗？"
+    },
+    {
+        "group_id": "chat_11_01_03",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "Sw[5]|chat_11_01_03Kid"
+    },
+    {
+        "group_id": "chat_11_01_03",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "JUMP",
+        "text": "!Sw[5]|chat_11_01_03notKid"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_11_01_03Kid",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "嘿嘿，果然是这样！主公大人也有这么可爱的一面呢。"
+    },
+    {
+        "group_id": "chat_11_01_03Kid",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "既然这样，我就破例呆在离您近一点的吧。"
+    },
+    {
+        "group_id": "chat_11_01_03Kid",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "NONE",
+        "text": "他移动到了离你很近的地方，只是没有和你共枕。"
+    },
+    {
+        "group_id": "chat_11_01_03Kid",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "晚安，主公大人，祝您有个好梦。\n我会在梦里陪您玩耍的。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    },
+    {
+        "group_id": "chat_11_01_03notKid",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "可是，主公大人应该已经成年了吧。"
+    },
+    {
+        "group_id": "chat_11_01_03notKid",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "那样的话，不应当害怕这个了才对吧？"
+    },
+    {
+        "group_id": "chat_11_01_03notKid",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "不过主公大人可以放心哦，有我在，是不会让任何东西被放进来的。"
+    },
+    {
+        "group_id": "chat_11_01_03notKid",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "快睡吧，如果您不乖乖睡觉，明天就没有精神玩耍了！"
+    },
+    {
+        "group_id": "chat_11_01_03notKid",
+        "actor_id": 11,
+        "min_love": 0,
+        "type": "sub",
+        "speaker": "SELF",
+        "text": "晚安哦，主公大人。"
+    },
+    {
+        "group_id": null,
+        "actor_id": null,
+        "min_love": null,
+        "type": null,
+        "speaker": null,
+        "text": null
+    }
+]
