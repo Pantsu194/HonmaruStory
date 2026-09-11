@@ -96,24 +96,7 @@
     PluginManager.registerCommand(pluginName, "open", args => SceneManager.push(Scene_Quest));
     PluginManager.registerCommand(pluginName, "remove", args => removeQuest(args.title));
 
-    // --- 主菜单集成逻辑 (V3.6 新增) ---
-    const _Window_MenuCommand_addOriginalCommands = Window_MenuCommand.prototype.addOriginalCommands;
-    Window_MenuCommand.prototype.addOriginalCommands = function() {
-        _Window_MenuCommand_addOriginalCommands.call(this);
-        // 添加选项
-        this.addCommand("审神者手账", "quest", true);
-    };
-
-    const _Scene_Menu_createCommandWindow = Scene_Menu.prototype.createCommandWindow;
-    Scene_Menu.prototype.createCommandWindow = function() {
-        _Scene_Menu_createCommandWindow.call(this);
-        // 绑定跳转事件
-        this._commandWindow.setHandler("quest", this.commandQuest.bind(this));
-    };
-
-    Scene_Menu.prototype.commandQuest = function() {
-        SceneManager.push(Scene_Quest);
-    };
+    // --- 主菜单集成：菜单项由 MenuHub 插件参数 menuItems 配置（动作: pluginCommand QuestSystem open） ---
 
     // --- 核心逻辑 ---
     function addQuest(data) {

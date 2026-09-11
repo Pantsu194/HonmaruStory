@@ -1,0 +1,733 @@
+[
+  {
+    "actor_id": 3,
+    "map_id": 2,
+    "group_id": "3_g36",
+    "speaker": "SELF",
+    "text": "今日天色正好。在本丸里这样悠闲地走走，倒也别有风趣。"
+  },
+  {
+    "actor_id": 3,
+    "map_id": 2,
+    "group_id": "3_g36",
+    "speaker": "SELF",
+    "text": "哈哈哈，云影悠悠，一如千年之前。"
+  },
+  {
+    "actor_id": 3,
+    "map_id": 4,
+    "group_id": "3_g08",
+    "speaker": "SELF",
+    "text": "这里偶尔有风吹过，很舒服。"
+  },
+  {
+    "actor_id": 3,
+    "map_id": 4,
+    "group_id": "3_g08",
+    "speaker": "SELF",
+    "text": "安静得很啊，反而让人想起了很多东西。"
+  },
+  {
+    "actor_id": 3,
+    "map_id": 6,
+    "group_id": "3_g35",
+    "speaker": "SELF",
+    "text": "哈哈哈，这卷书虽然算不上珍本，读来倒也颇有意思。"
+  },
+  {
+    "actor_id": 3,
+    "map_id": 6,
+    "group_id": "3_g35",
+    "speaker": "SELF",
+    "text": "若是主上想听，我可以讲几个平安时代的故事。"
+  },
+  {
+    "actor_id": 3,
+    "map_id": 6,
+    "group_id": "3_g35",
+    "speaker": "NONE",
+    "text": "三日月宗近眯起眼睛，露出悠远的笑容。"
+  },
+  {
+    "actor_id": 3,
+    "map_id": 7,
+    "group_id": "3_g07",
+    "speaker": "SELF",
+    "text": "哈哈哈，这里的景色无论看多少次都不会腻。"
+  },
+  {
+    "actor_id": 3,
+    "map_id": 7,
+    "group_id": "3_g07",
+    "speaker": "SELF",
+    "text": "美景如画，心随景动。主上不妨也坐下来喝杯茶。"
+  },
+  {
+    "actor_id": 3,
+    "map_id": 0,
+    "group_id": "3_common",
+    "speaker": "SELF",
+    "text": "哈哈哈，偶尔像这样漫无目的地走走，也别有一番趣味。"
+  },
+  {
+    "actor_id": 7,
+    "map_id": 2,
+    "group_id": "7_g37",
+    "speaker": "SELF",
+    "text": "嗯，庭院的气息很干净。\n不过为了以防万一，我已在四周布下了驱邪的结界。"
+  },
+  {
+    "actor_id": 7,
+    "map_id": 2,
+    "group_id": "7_g37",
+    "speaker": "SELF",
+    "text": "主上大可安心散步。"
+  },
+  {
+    "actor_id": 7,
+    "map_id": 4,
+    "group_id": "7_g38",
+    "speaker": "SELF",
+    "text": "大广间十分宽敞，正适合舒展筋骨。"
+  },
+  {
+    "actor_id": 7,
+    "map_id": 4,
+    "group_id": "7_g38",
+    "speaker": "SELF",
+    "text": "……我会注意分寸，不会伤到您，或是破坏墙壁的。"
+  },
+  {
+    "actor_id": 7,
+    "map_id": 6,
+    "group_id": "7_g12",
+    "speaker": "SELF",
+    "text": "这里有许多书籍。身为御神刀，我也该多积累知识。"
+  },
+  {
+    "actor_id": 7,
+    "map_id": 30,
+    "group_id": "7_g11",
+    "speaker": "SELF",
+    "text": "每当心烦意乱的时候，我都会来这里。"
+  },
+  {
+    "actor_id": 7,
+    "map_id": 30,
+    "group_id": "7_g11",
+    "speaker": "SELF",
+    "text": "闭上眼，深呼吸，心就能安静下来。"
+  },
+  {
+    "actor_id": 7,
+    "map_id": 0,
+    "group_id": "7_common",
+    "speaker": "SELF",
+    "text": "嗯，这附近的气息很平稳。主上只管安心散步便是。"
+  },
+  {
+    "actor_id": 11,
+    "map_id": 2,
+    "group_id": "11_g24",
+    "speaker": "SELF",
+    "text": "主公大人快看！那朵云，是不是很像天狗骑的马？"
+  },
+  {
+    "actor_id": 11,
+    "map_id": 2,
+    "group_id": "11_g24",
+    "speaker": "SELF",
+    "text": "嘿嘿，说不定是鞍马山的天狗来串门了呢！\n开玩笑的，天狗不会在白天过来玩。"
+  },
+  {
+    "actor_id": 11,
+    "map_id": 4,
+    "group_id": "11_g22",
+    "speaker": "SELF",
+    "text": "大广间好宽敞呀——在这里跑来跑去，也不会撞到柱子呢。"
+  },
+  {
+    "actor_id": 11,
+    "map_id": 4,
+    "group_id": "11_g22",
+    "speaker": "SELF",
+    "text": "嘿嘿，主公大人要一起玩吗？今剑躲起来可是很厉害的……大概！"
+  },
+  {
+    "actor_id": 11,
+    "map_id": 11,
+    "group_id": "11_g23",
+    "speaker": "SELF",
+    "text": "好香的味道……！主公大人，今天吃什么呀？"
+  },
+  {
+    "actor_id": 11,
+    "map_id": 11,
+    "group_id": "11_g23",
+    "speaker": "NONE",
+    "text": "今剑踮着脚尖，眼巴巴地往灶台那边张望。"
+  },
+  {
+    "actor_id": 11,
+    "map_id": 0,
+    "group_id": "11_common",
+    "speaker": "SELF",
+    "text": "主公大人主公大人！今天也陪今剑一起玩吧？"
+  },
+  {
+    "actor_id": 47,
+    "map_id": 2,
+    "group_id": "47_g34",
+    "speaker": "SELF",
+    "text": "晒、晒太阳的时候，小老虎们都会围着我打盹……很、很暖和哦。"
+  },
+  {
+    "actor_id": 47,
+    "map_id": 2,
+    "group_id": "47_g34",
+    "speaker": "SELF",
+    "text": "主人要是走累了……也、也可以过来坐一坐……"
+  },
+  {
+    "actor_id": 47,
+    "map_id": 3,
+    "group_id": "47_g31",
+    "speaker": "SELF",
+    "text": "呜……走、走路要轻一点，不能吵到主人才行……"
+  },
+  {
+    "actor_id": 47,
+    "map_id": 3,
+    "group_id": "47_g31",
+    "speaker": "NONE",
+    "text": "五虎退的身后，小老虎们排成一串，也学着他放轻了脚步。"
+  },
+  {
+    "actor_id": 47,
+    "map_id": 4,
+    "group_id": "47_g32",
+    "speaker": "SELF",
+    "text": "这、这么大的房间，一个人待着……总觉得有点害怕……"
+  },
+  {
+    "actor_id": 47,
+    "map_id": 4,
+    "group_id": "47_g32",
+    "speaker": "SELF",
+    "text": "主、主人愿意的话……能、能稍微陪我一会儿吗？"
+  },
+  {
+    "actor_id": 47,
+    "map_id": 11,
+    "group_id": "47_g33",
+    "speaker": "SELF",
+    "text": "那、那个……小老虎们说，闻到很香的味道……"
+  },
+  {
+    "actor_id": 47,
+    "map_id": 11,
+    "group_id": "47_g33",
+    "speaker": "SELF",
+    "text": "啊、不是！我不是来偷吃的！是、是它们想看看主人做饭的样子！"
+  },
+  {
+    "actor_id": 47,
+    "map_id": 0,
+    "group_id": "47_common",
+    "speaker": "SELF",
+    "text": "那、那个……主人，小老虎们说，还想再多走一会儿……"
+  },
+  {
+    "actor_id": 85,
+    "map_id": 4,
+    "group_id": "85_g03",
+    "speaker": "SELF",
+    "text": "大广间真宽敞啊，练完剑经常喜欢在这里坐坐。"
+  },
+  {
+    "actor_id": 85,
+    "map_id": 11,
+    "group_id": "85_g01",
+    "speaker": "SELF",
+    "text": "今天的饭菜真香啊……"
+  },
+  {
+    "actor_id": 85,
+    "map_id": 11,
+    "group_id": "85_g01",
+    "speaker": "SELF",
+    "text": "主人喜欢吃什么？我虽然不擅长厨艺，但如果主人在的话……"
+  },
+  {
+    "actor_id": 85,
+    "map_id": 11,
+    "group_id": "85_g02",
+    "speaker": "SELF",
+    "text": "啊，我好像来得不是时候……午饭已经吃过了吗？"
+  },
+  {
+    "actor_id": 85,
+    "map_id": 11,
+    "group_id": "85_g02",
+    "speaker": "NONE",
+    "text": "他摸了摸后脑勺，有点不好意思。"
+  },
+  {
+    "actor_id": 85,
+    "map_id": 0,
+    "group_id": "85_common",
+    "speaker": "SELF",
+    "text": "嗯——今天的状态还不错吧？主人，你可要看清楚哦。"
+  },
+  {
+    "actor_id": 87,
+    "map_id": 3,
+    "group_id": "87_g25",
+    "speaker": "SELF",
+    "text": "……走廊尽头能看到庭院。这里视野开阔，又有一定的隐蔽。"
+  },
+  {
+    "actor_id": 87,
+    "map_id": 3,
+    "group_id": "87_g25",
+    "speaker": "SELF",
+    "text": "万一有什么动静，我也能第一时间护在主人身前。"
+  },
+  {
+    "actor_id": 87,
+    "map_id": 4,
+    "group_id": "87_g27",
+    "speaker": "SELF",
+    "text": "没有活动集会的时候，大广间也很适合放松。\n主人若是想活动筋骨，我也可以奉陪。"
+  },
+  {
+    "actor_id": 87,
+    "map_id": 4,
+    "group_id": "87_g27",
+    "speaker": "PLAYER",
+    "text": "改天去道场吧。"
+  },
+  {
+    "actor_id": 87,
+    "map_id": 4,
+    "group_id": "87_g27",
+    "speaker": "SELF",
+    "text": "……嗯。"
+  },
+  {
+    "actor_id": 87,
+    "map_id": 6,
+    "group_id": "87_g26",
+    "speaker": "SELF",
+    "text": "主人是要找清光吗？他大概又跑去厨房那边了。"
+  },
+  {
+    "actor_id": 87,
+    "map_id": 6,
+    "group_id": "87_g26",
+    "speaker": "SELF",
+    "text": "需要我去把他叫回来吗？"
+  },
+  {
+    "actor_id": 87,
+    "map_id": 0,
+    "group_id": "87_common",
+    "speaker": "SELF",
+    "text": "主人身边没什么异常。……嗯，这样就好。"
+  },
+  {
+    "actor_id": 89,
+    "map_id": 2,
+    "group_id": "89_g29",
+    "speaker": "SELF",
+    "text": "庭前的花，今日开得正好。\n……主公，偶尔停下脚步赏赏花，也算不得虚度光阴哦。"
+  },
+  {
+    "actor_id": 89,
+    "map_id": 2,
+    "group_id": "89_g29",
+    "speaker": "SELF",
+    "text": "毕竟，风雅之心，可是千金难买的。"
+  },
+  {
+    "actor_id": 89,
+    "map_id": 4,
+    "group_id": "89_g30",
+    "speaker": "SELF",
+    "text": "方才经过大广间，听得一阵乒乓作响……\n为什么会有人在大广间练武啊，这不风雅。"
+  },
+  {
+    "actor_id": 89,
+    "map_id": 4,
+    "group_id": "89_g30",
+    "speaker": "SELF",
+    "text": "……失礼了。\n我并非在说诸位同伴的不是，只是忍不住想感叹两句罢了。"
+  },
+  {
+    "actor_id": 89,
+    "map_id": 6,
+    "group_id": "89_g28",
+    "speaker": "SELF",
+    "text": "嗯……这卷书的装帧虽不算名贵，字里行间的风骨倒是值得一读。"
+  },
+  {
+    "actor_id": 89,
+    "map_id": 6,
+    "group_id": "89_g28",
+    "speaker": "SELF",
+    "text": "主公若是有兴致，不妨让我为您诵读几段？"
+  },
+  {
+    "actor_id": 89,
+    "map_id": 0,
+    "group_id": "89_common",
+    "speaker": "SELF",
+    "text": "风雅之事，未必非要挑地方。……比如现在这样。"
+  },
+  {
+    "actor_id": 91,
+    "map_id": 3,
+    "group_id": "91_g17",
+    "speaker": "SELF",
+    "text": "啧，这走廊打扫得真干净。"
+  },
+  {
+    "actor_id": 91,
+    "map_id": 3,
+    "group_id": "91_g17",
+    "speaker": "NONE",
+    "text": "和泉守兼定若有所思地点了点头。"
+  },
+  {
+    "actor_id": 91,
+    "map_id": 0,
+    "group_id": "91_common",
+    "speaker": "SELF",
+    "text": "随便走走也能碰上你。……倒也不算坏事。"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 4,
+    "group_id": "93_g40",
+    "speaker": "SELF",
+    "text": "这大广间真气派！咱老家的屋子，可没这么敞亮。"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 4,
+    "group_id": "93_g40",
+    "speaker": "SELF",
+    "text": "新时代的屋子就该这样，藏着掖着多没意思，对吧，主上！"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 11,
+    "group_id": "93_g39",
+    "speaker": "SELF",
+    "text": "哈哈哈，这香味，把咱的魂都勾过来了！"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 11,
+    "group_id": "93_g39",
+    "speaker": "SELF",
+    "text": "咱虽然不擅长掌勺，但劈柴切菜可是一把好手。主上，有要帮忙的尽管吩咐！"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 19,
+    "group_id": "93_g41",
+    "speaker": "SELF",
+    "text": "哦——泡澡真痛快！咱听说，新时代的船都是用蒸汽推着跑的。"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 19,
+    "group_id": "93_g41",
+    "speaker": "SELF",
+    "text": "说不定哪天，咱也能给这浴池装上点什么新发明。\n……在那之前，先好好泡上一回再说！"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 19,
+    "group_id": "93_g41",
+    "speaker": "PLAYER",
+    "text": "你最好别搞出什么蒸汽动力浴盆来。"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 29,
+    "group_id": "93_g18",
+    "speaker": "SELF",
+    "text": "幕末的时候，也常在这样的房间里商议大事。"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 29,
+    "group_id": "93_g18",
+    "speaker": "SELF",
+    "text": "我是说，那个家伙。"
+  },
+  {
+    "actor_id": 93,
+    "map_id": 0,
+    "group_id": "93_common",
+    "speaker": "SELF",
+    "text": "咱就这么随便转转，也能遇上主上。这就是新时代的缘分吧！"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 2,
+    "group_id": "95_g43",
+    "speaker": "SELF",
+    "text": "……这里人少，风也安静。我想一个人待一会儿。"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 2,
+    "group_id": "95_g43",
+    "speaker": "SELF",
+    "text": "主上不必管我。"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 2,
+    "group_id": "95_g43",
+    "speaker": "NONE",
+    "text": "山姥切国广拉了拉披在身上的布，别过脸去。"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 3,
+    "group_id": "95_g04",
+    "speaker": "SELF",
+    "text": "……从走廊望出去，可以看到庭院。"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 3,
+    "group_id": "95_g04",
+    "speaker": "SELF",
+    "text": "我偶尔会在这里发呆，思考一些无关紧要的事。"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 3,
+    "group_id": "95_g05",
+    "speaker": "SELF",
+    "text": "主上也喜欢在这里散步吗？"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 6,
+    "group_id": "95_g42",
+    "speaker": "SELF",
+    "text": "……书。我只是觉得，多读一些，或许能离那些名刀更近一点。"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 6,
+    "group_id": "95_g42",
+    "speaker": "SELF",
+    "text": "虽然是仿品，也不能一直原地踏步。\n……请不要这样看着我。"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 13,
+    "group_id": "95_g06",
+    "speaker": "SELF",
+    "text": "锻炼是必要的，但过度训练也会有反效果。"
+  },
+  {
+    "actor_id": 95,
+    "map_id": 0,
+    "group_id": "95_common",
+    "speaker": "SELF",
+    "text": "……只是走走而已。不用太在意我。"
+  },
+  {
+    "actor_id": 101,
+    "map_id": 11,
+    "group_id": "101_g09",
+    "speaker": "SELF",
+    "text": "厨房是战斗的后勤保障——这话是我说的。"
+  },
+  {
+    "actor_id": 101,
+    "map_id": 19,
+    "group_id": "101_g10",
+    "speaker": "SELF",
+    "text": "泡个澡是恢复的最佳方式。要一起吗？"
+  },
+  {
+    "actor_id": 101,
+    "map_id": 0,
+    "group_id": "101_common",
+    "speaker": "SELF",
+    "text": "巡视也是分内之事，主人不必费心。"
+  },
+  {
+    "actor_id": 107,
+    "map_id": 3,
+    "group_id": "107_g19",
+    "speaker": "SELF",
+    "text": "我的弟弟……额……",
+    "pair_group": "genji"
+  },
+  {
+    "actor_id": 107,
+    "map_id": 4,
+    "group_id": "107_g21",
+    "speaker": "SELF",
+    "text": "一个人清静也不错，今天阳光正好。"
+  },
+  {
+    "actor_id": 107,
+    "map_id": 0,
+    "group_id": "107_common",
+    "speaker": "SELF",
+    "text": "嗯——我那个弟弟，又跑到哪儿去了呢？"
+  },
+  {
+    "actor_id": 112,
+    "map_id": 2,
+    "group_id": "112_g45",
+    "speaker": "SELF",
+    "text": "这庭院开阔，适合散心。\n兄长要是又在哪儿迷了路，我一眼就能望见。"
+  },
+  {
+    "actor_id": 112,
+    "map_id": 2,
+    "group_id": "112_g45",
+    "speaker": "SELF",
+    "text": "……话虽如此，我还是走一圈去找找他吧。"
+  },
+  {
+    "actor_id": 112,
+    "map_id": 3,
+    "group_id": "112_g20",
+    "speaker": "SELF",
+    "text": "兄长！原来你在这里。\n我是膝丸啊！",
+    "pair_group": "genji"
+  },
+  {
+    "actor_id": 112,
+    "map_id": 3,
+    "group_id": "112_g20",
+    "speaker": "SELF",
+    "text": "不要总是到处乱跑啊。",
+    "pair_group": "genji"
+  },
+  {
+    "actor_id": 112,
+    "map_id": 6,
+    "group_id": "112_g44",
+    "speaker": "SELF",
+    "text": "主人也在找书吗？\n我想挑一卷能打发时间的读物。"
+  },
+  {
+    "actor_id": 112,
+    "map_id": 6,
+    "group_id": "112_g44",
+    "speaker": "SELF",
+    "text": "如果哪卷有兴趣，也许也可以和兄长分享。\n您要一起看吗？"
+  },
+  {
+    "actor_id": 112,
+    "map_id": 29,
+    "group_id": "112_g15",
+    "speaker": "SELF",
+    "text": "兄长大人常说喝茶有益身心。\n说实话，我只是陪他来。"
+  },
+  {
+    "actor_id": 112,
+    "map_id": 0,
+    "group_id": "112_common",
+    "speaker": "SELF",
+    "text": "兄长大人大概又走远了。\n主人，请恕我失陪片刻。"
+  },
+  {
+    "actor_id": 118,
+    "map_id": 6,
+    "group_id": "118_g16",
+    "speaker": "SELF",
+    "text": "根据主上的需要，我正在研究战略。"
+  },
+  {
+    "actor_id": 118,
+    "map_id": 6,
+    "group_id": "118_g16",
+    "speaker": "PLAYER",
+    "text": "真可靠啊。"
+  },
+  {
+    "actor_id": 118,
+    "map_id": 6,
+    "group_id": "118_g16",
+    "speaker": "SELF",
+    "text": "这是分内之事。"
+  },
+  {
+    "actor_id": 118,
+    "map_id": 0,
+    "group_id": "118_common",
+    "speaker": "SELF",
+    "text": "主上，若有任何吩咐，请随时传唤我。"
+  },
+  {
+    "actor_id": 130,
+    "map_id": 2,
+    "group_id": "130_g47",
+    "speaker": "SELF",
+    "text": "这庭院里能躲的地方可真不少。树干后面、屋檐底下……"
+  },
+  {
+    "actor_id": 130,
+    "map_id": 2,
+    "group_id": "130_g47",
+    "speaker": "SELF",
+    "text": "主人，你猜，我今天有没有在那里藏点什么惊喜？"
+  },
+  {
+    "actor_id": 130,
+    "map_id": 3,
+    "group_id": "130_g13",
+    "speaker": "SELF",
+    "text": "嘿嘿，你猜我会从哪扇门后面跳出来？"
+  },
+  {
+    "actor_id": 130,
+    "map_id": 3,
+    "group_id": "130_g13",
+    "speaker": "SELF",
+    "text": "别紧张，我今天不是来吓人的。\n…………大概。"
+  },
+  {
+    "actor_id": 130,
+    "map_id": 13,
+    "group_id": "130_g14",
+    "speaker": "SELF",
+    "text": "这里真宽敞呢，但是不好躲啊。"
+  },
+  {
+    "actor_id": 130,
+    "map_id": 19,
+    "group_id": "130_g46",
+    "speaker": "SELF",
+    "text": "这浴室雾气腾腾，倒是个藏身的好地方。"
+  },
+  {
+    "actor_id": 130,
+    "map_id": 19,
+    "group_id": "130_g46",
+    "speaker": "SELF",
+    "text": "主人，可要小心哦。\n说不定哪团雾气后面，就躲着一个惊喜哦？\n到时候可别脚滑啦。"
+  },
+  {
+    "actor_id": 130,
+    "map_id": 0,
+    "group_id": "130_common",
+    "speaker": "SELF",
+    "text": "嘿嘿，主人——猜猜我下一步会从哪儿冒出来？"
+  }
+]

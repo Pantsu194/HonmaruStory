@@ -1,0 +1,112 @@
+{
+  "entries": [
+    {
+      "varId": 85,
+      "image": "打刀/加州清光/Kashuu-1",
+      "x": 200,
+      "y": 32
+    },
+    {
+      "varId": 89,
+      "image": "打刀/歌仙兼定/Kasen-1",
+      "x": 184,
+      "y": 24
+    },
+    {
+      "varId": 93,
+      "image": "打刀/陸奥守吉行/Mutsunokami-1",
+      "x": 72,
+      "y": 8
+    },
+    {
+      "varId": 95,
+      "image": "打刀/山姥切国広/Yamanbagiri-1",
+      "x": 144,
+      "y": 16
+    },
+    {
+      "varId": 101,
+      "image": "打刀/蜂須賀虎徹/Hachisuka-1",
+      "x": 72,
+      "y": 8
+    },
+    {
+      "varId": 87,
+      "image": "打刀/大和守安定/Yamatonokami-1",
+      "x": 272,
+      "y": 32
+    },
+    {
+      "varId": 3,
+      "image": "太刀/三日月宗近/Mikazuki-1",
+      "x": 168,
+      "y": 16
+    },
+    {
+      "varId": 5,
+      "image": "太刀/小狐丸/Kogitsunemaru-1",
+      "x": 64,
+      "y": 8
+    },
+    {
+      "varId": 7,
+      "image": "大太刀/石切丸/Ishikirimaru-1",
+      "x": 144,
+      "y": 0
+    },
+    {
+      "varId": 9,
+      "image": "薙刀/岩融/Iwatooshi-1",
+      "x": 8,
+      "y": -96
+    },
+    {
+      "varId": 11,
+      "image": "短刀/今剑/Imanotsurugi-1",
+      "x": 128,
+      "y": 96
+    },
+    {
+      "varId": 23,
+      "image": "打刀/鸣狐/Nakigitsune-1",
+      "x": 256,
+      "y": 32
+    },
+    {
+      "varId": 81,
+      "image": "打刀/宗三左文字/Souza-1",
+      "x": 88,
+      "y": 16
+    },
+    {
+      "varId": 91,
+      "image": "打刀/和泉守兼定/Izuminokami-1",
+      "x": 40,
+      "y": 16
+    },
+    {
+      "varId": 118,
+      "image": "打刀/へし切長谷部/Heshikiri-1",
+      "x": 16,
+      "y": 8
+    },
+    {
+      "varId": 130,
+      "image": "太刀/鶴丸国永/Tsurumaru-1",
+      "x": 160,
+      "y": 16
+    },
+    {
+      "varId": 107,
+      "image": "太刀/髭切/Higekiri-1",
+      "x": 160,
+      "y": 8
+    },
+    {
+      "varId": 112,
+      "image": "太刀/膝丸/Hizamaru-1",
+      "x": 208,
+      "y": 8
+    }
+  ]
+}

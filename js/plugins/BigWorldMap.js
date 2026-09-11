@@ -213,21 +213,9 @@
         SceneManager.push(Scene_BigWorldMap);
     });
 
-    const _Window_MenuCommand_addOriginalCommands = Window_MenuCommand.prototype.addOriginalCommands;
-    Window_MenuCommand.prototype.addOriginalCommands = function() {
-        _Window_MenuCommand_addOriginalCommands.call(this);
-        if (config.showInMenu) {
-            const contextMapId = getCurrentContextMapId();
-            const enabled = !!contextMapId; 
-            this.addCommand(config.menuName, "bigWorldMap", enabled);
-        }
-    };
-
-    const _Scene_Menu_createCommandWindow = Scene_Menu.prototype.createCommandWindow;
-    Scene_Menu.prototype.createCommandWindow = function() {
-        _Scene_Menu_createCommandWindow.call(this);
-        this._commandWindow.setHandler("bigWorldMap", this.commandBigWorldMap.bind(this));
-    };
+    // --- 主菜单集成：菜单项由 MenuHub 插件参数 menuItems 配置 ---
+    // （动作: globalCall BigWorldMap.openFromMenu；可用条件: BigWorldMap.available）
+    // 注意：勿在此处再调用 MenuHub.add 注册 bigWorldMap，会覆盖参数配置！
 
     Scene_Menu.prototype.commandBigWorldMap = function() {
         const contextMapId = getCurrentContextMapId();
@@ -544,5 +532,24 @@
             ctx.restore();
         }
     }
+
+    // =========================================================================
+    // 菜单全局入口（MenuHub 参数配置用）
+    // 供 MenuHub 的 enabledCall / callTarget 调用，如：
+    //   enabledType=globalCall, enabledCall=BigWorldMap.available
+    //   actionType=globalCall,  callTarget=BigWorldMap.openFromMenu
+    // =========================================================================
+    window.BigWorldMap = window.BigWorldMap || {};
+    window.BigWorldMap.available = function() {
+        // 保留原 showInMenu 参数语义：关闭时菜单按钮不可用
+        return config.showInMenu && !!getCurrentContextMapId();
+    };
+    window.BigWorldMap.openFromMenu = function() {
+        const contextMapId = getCurrentContextMapId();
+        if (contextMapId) {
+            Scene_BigWorldMap.targetMapId = contextMapId;
+            SceneManager.push(Scene_BigWorldMap);
+        }
+    };
 
 })();

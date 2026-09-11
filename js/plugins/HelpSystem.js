@@ -116,20 +116,12 @@
     });
 
     // =========================================================================
-    // 主菜单集成
+    // 主菜单集成：菜单项由 MenuHub 插件参数 menuItems 配置（动作: pluginCommand HelpSystem open）
     // =========================================================================
-    const _Window_MenuCommand_addOriginalCommands = Window_MenuCommand.prototype.addOriginalCommands;
-    Window_MenuCommand.prototype.addOriginalCommands = function() {
-        _Window_MenuCommand_addOriginalCommands.call(this);
-        if (config.showInMenu) {
-            this.addCommand(config.menuName, "helpSystem", true);
-        }
-    };
-
-    const _Scene_Menu_createCommandWindow = Scene_Menu.prototype.createCommandWindow;
-    Scene_Menu.prototype.createCommandWindow = function() {
-        _Scene_Menu_createCommandWindow.call(this);
-        this._commandWindow.setHandler("helpSystem", this.commandHelpSystem.bind(this));
+    // 暴露菜单可用性判断（MenuHub enabledCall 用），保留原 ShowInMenu 参数语义
+    window.HelpSystem = window.HelpSystem || {};
+    window.HelpSystem.menuEnabled = function() {
+        return config.showInMenu;
     };
 
     Scene_Menu.prototype.commandHelpSystem = function() {

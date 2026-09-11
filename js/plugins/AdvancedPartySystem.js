@@ -55,7 +55,7 @@
 (() => {
     'use strict';
 
-    const pluginName = "AdvancedPartySystem_Safe";
+    const pluginName = "AdvancedPartySystem";
     const parameters = PluginManager.parameters(pluginName);
     const MAX_BATTLE_MEMBERS = Number(parameters['MaxBattleMembers'] || 6);
     const MAX_FOLLOWERS = Number(parameters['MaxFollowers'] || 6);

@@ -1,0 +1,22 @@
+《野生本丸物语》网页部署包（精简压缩版）
+=====================================
+来源      : export\0911测试版\移动端\野生本丸物语（原始导出 1.14 GB / 4566 文件）
+构建时间  : 2026-09-12 01:30
+文件数    : 706
+体积      : 约 49.8 MB
+游戏版本  : 0911测试版（测试版 0.2.0）
+
+构建流程
+--------
+1. _tools\build_deploy.py    按引用闭包挑出游戏真正需要的文件
+2. _tools\prune_deploy.py    就地删除 3861 个不需要的文件
+3. _tools\compress_images.py 图片压到像素上限 1280 / 256 色（压不动的原样保留）
+
+保留依据
+--------
+- 标准引用 / 插件参数 / 插件代码 / 地图事件 / 角色备注 <TouchoImg:...>
+- 数据文件（NightDialogues、WanderDialogues、PortraitConfig_migration）
+- 目录约定 img/pictures/cg、引擎硬依赖 img/system/** 与 fonts/**
+
+线上地址：https://honmaru-story.vercel.app
+仓库：https://github.com/Pantsu194/HonmaruStory

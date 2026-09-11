@@ -172,17 +172,7 @@
     // -------------------------------------------------------------------------
     // 2. 菜单入口
     // -------------------------------------------------------------------------
-    const _Window_MenuCommand_addOriginalCommands = Window_MenuCommand.prototype.addOriginalCommands;
-    Window_MenuCommand.prototype.addOriginalCommands = function() {
-        _Window_MenuCommand_addOriginalCommands.call(this);
-        this.addCommand("刀帐", "toucho", true);
-    };
-
-    const _Scene_Menu_createCommandWindow = Scene_Menu.prototype.createCommandWindow;
-    Scene_Menu.prototype.createCommandWindow = function() {
-        _Scene_Menu_createCommandWindow.call(this);
-        this._commandWindow.setHandler("toucho", () => SceneManager.push(Scene_Toucho));
-    };
+    // --- 主菜单集成：菜单项由 MenuHub 插件参数 menuItems 配置（动作: scene Scene_Toucho） ---
 
     // -------------------------------------------------------------------------
     // 3. 场景实现
@@ -548,5 +538,8 @@
             this.y += floatY;
         }
     }
+
+    // 导出场景类到全局（MenuHub 参数化配置 actionType=scene 需要全局查找）
+    window.Scene_Toucho = Scene_Toucho;
 
 })();
