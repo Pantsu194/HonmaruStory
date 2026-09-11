@@ -1,22 +1,23 @@
-《野生本丸物语》网页部署包（精简压缩版）
+《野生本丸物语》网页部署包（精简压缩版 v2）
 =====================================
 来源      : export\0911测试版\移动端\野生本丸物语（原始导出 1.14 GB / 4566 文件）
-构建时间  : 2026-09-12 01:30
-文件数    : 706
-体积      : 约 49.8 MB
+文件数    : 1469
+体积      : 约 71.6 MB
 游戏版本  : 0911测试版（测试版 0.2.0）
 
-构建流程
---------
-1. _tools\build_deploy.py    按引用闭包挑出游戏真正需要的文件
-2. _tools\prune_deploy.py    就地删除 3861 个不需要的文件
-3. _tools\compress_images.py 图片压到像素上限 1280 / 256 色（压不动的原样保留）
+本轮修复（v2）
+--------------
+1. 修复 v1 漏删音频的严重问题：data/System.json 的 titleBgm(Town7)、battleBgm
+   以及 Animations.json 里 202 个技能音效此前未被识别，现已全部保留
+2. 音频/特效改为「保守策略」：工程中被提到的 246 个音频 100% 在包内
+3. effects/** 整目录保留（.efkefc 内部引用的贴图无法静态扫描）
+4. 只删除工程中从未被提到的 204 个音频（无人播放的 legacy 音乐）
 
 保留依据
 --------
-- 标准引用 / 插件参数 / 插件代码 / 地图事件 / 角色备注 <TouchoImg:...>
-- 数据文件（NightDialogues、WanderDialogues、PortraitConfig_migration）
-- 目录约定 img/pictures/cg、引擎硬依赖 img/system/** 与 fonts/**
+- 引用闭包：数据库字段 / 地图事件 / 公共事件 / 插件参数 / 插件代码 / 角色备注
+- 兜底扫描：System.json 全字段、全部地图文件、全部数据文件字符串
+- 目录约定：img/pictures/cg；引擎硬依赖：img/system/**、fonts/**
 
-线上地址：https://honmaru-story.vercel.app
+线上地址：https://www.honmarustory.top
 仓库：https://github.com/Pantsu194/HonmaruStory
