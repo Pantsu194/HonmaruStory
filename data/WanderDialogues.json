@@ -431,7 +431,7 @@
     "map_id": 11,
     "group_id": "93_g39",
     "speaker": "SELF",
-    "text": "咱虽然不擅长掌勺，但劈柴切菜可是一把好手。主上，有要帮忙的尽管吩咐！"
+    "text": "咱虽然不擅长掌勺，但劈柴切菜可是一把好手。\n主上，有要帮忙的尽管吩咐！"
   },
   {
     "actor_id": 93,
@@ -729,5 +729,61 @@
     "group_id": "130_common",
     "speaker": "SELF",
     "text": "嘿嘿，主人——猜猜我下一步会从哪儿冒出来？"
+  },
+  {
+    "actor_id": 248,
+    "map_id": 2,
+    "group_id": "248_g48",
+    "speaker": "SELF",
+    "text": "（发出奇怪的吊嗓子的声音）"
+  },
+  {
+    "actor_id": 248,
+    "map_id": 2,
+    "group_id": "248_g48",
+    "speaker": "SELF",
+    "text": "咳，主人，我刚刚在开嗓练习。"
+  },
+  {
+    "actor_id": 248,
+    "map_id": 2,
+    "group_id": "248_g48",
+    "speaker": "SELF",
+    "text": "您想听我唱点什么吗？"
+  },
+  {
+    "actor_id": 248,
+    "map_id": 4,
+    "group_id": "248_g49",
+    "speaker": "SELF",
+    "text": "啊——\n这里有回声呢，果然，不开会的时候，大广间还是太空旷了。"
+  },
+  {
+    "actor_id": 248,
+    "map_id": 6,
+    "group_id": "248_g50",
+    "speaker": "SELF",
+    "text": "您这书房里居然还有歌谱和乐谱，真是浩如烟海。"
+  },
+  {
+    "actor_id": 248,
+    "map_id": 19,
+    "group_id": "248_g51",
+    "speaker": "SELF",
+    "text": "湿润的空气会缓解喉咙的不适。"
+  },
+  {
+    "actor_id": 248,
+    "map_id": 19,
+    "group_id": "248_g51",
+    "speaker": "SELF",
+    "text": "不过浴室里面雾气腾腾的，\n在这里唱起歌来，可能会被当成水鬼吧？"
+  },
+  {
+    "actor_id": 248,
+    "map_id": 0,
+    "group_id": "130_common",
+    "speaker": "SELF",
+    "text": "如此美丽的国家，是否拥有与之相配的守护者？"
   }
 ]

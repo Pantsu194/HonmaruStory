@@ -5558,5 +5558,421 @@
     "type": "sub",
     "speaker": "NONE",
     "text": "五虎退闭上眼，乖乖地低下头。\n片刻后，他带着安心的神情守在你的身旁。"
+  },
+  {
+    "group_id": "chat_248_01_01",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "talk",
+    "speaker": "NONE",
+    "text": "夜色深沉，床边传来轻声的哼唱。"
+  },
+  {
+    "group_id": "chat_248_01_01",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "talk",
+    "speaker": "NONE",
+    "text": "见你目光投来，三郎国宗停下哼唱，转向了你，仍是眯着眼。"
+  },
+  {
+    "group_id": "chat_248_01_01",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "cg",
+    "speaker": "",
+    "text": "cg_三郎_1"
+  },
+  {
+    "group_id": "chat_248_01_01",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "talk",
+    "speaker": "SELF",
+    "text": "哎呀，吵到您了？"
+  },
+  {
+    "group_id": "chat_248_01_01",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "talk",
+    "speaker": "CHOICE",
+    "text": "你在唱什么？|chat_248_01_02"
+  },
+  {
+    "group_id": "chat_248_01_01",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "talk",
+    "speaker": "CHOICE",
+    "text": "你为什么……愿意来到现世？|chat_248_01_03"
+  },
+  {
+    "group_id": "chat_248_01_02",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "也不是什么正经曲子。说是歌，其实更像从前的号子。"
+  },
+  {
+    "group_id": "chat_248_01_02",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "搬东西上山时唱的那种，一呀，二呀，三！"
+  },
+  {
+    "group_id": "chat_248_01_02",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "NONE",
+    "text": "他轻敲膝盖，压着嗓子唱了两句。"
+  },
+  {
+    "group_id": "chat_248_01_02",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "NONE",
+    "text": "寂静的夜里回荡着他的歌声。"
+  },
+  {
+    "group_id": "chat_248_01_02",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "唱歌、跳舞，鼓舞众人——这就是我如今的职责了。"
+  },
+  {
+    "group_id": "chat_248_01_02",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "真好听，再来一段。|chat_248_01_04"
+  },
+  {
+    "group_id": "chat_248_01_02",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "小声些，别把人吵醒。|chat_248_01_05"
+  },
+  {
+    "group_id": "chat_248_01_03",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "……因为国家有难，我才来的。"
+  },
+  {
+    "group_id": "chat_248_01_03",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "PLAYER",
+    "text": "国家有难？如今不是很太平吗。"
+  },
+  {
+    "group_id": "chat_248_01_03",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "在您眼里，或许是这样吧。"
+  },
+  {
+    "group_id": "chat_248_01_03",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "PLAYER",
+    "text": "所以，你觉得国家面临着怎样的灾祸？"
+  },
+  {
+    "group_id": "chat_248_01_03",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "（他顿了一下）……这个，说来话长。\n不适合睡前说来听，也不适合现在。"
+  },
+  {
+    "group_id": "chat_248_01_03",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "NONE",
+    "text": "他垂下眼，像把什么话按回了喉咙里。"
+  },
+  {
+    "group_id": "chat_248_01_03",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "好，那我不问了。|chat_248_01_04"
+  },
+  {
+    "group_id": "chat_248_01_03",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "你其实不打算告诉我吧。|chat_248_01_06"
+  },
+  {
+    "group_id": "chat_248_01_04",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "给您哼一点舒缓的小曲儿如何？"
+  },
+  {
+    "group_id": "chat_248_01_04",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "出征的、得胜的、送葬的，我都会唱。\n不过这个时辰，适合唱摇篮曲。"
+  },
+  {
+    "group_id": "chat_248_01_04",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "那就唱一段吧。|chat_248_01_07"
+  },
+  {
+    "group_id": "chat_248_01_04",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "算了，今夜就这样吧。|chat_248_01_09"
+  },
+  {
+    "group_id": "chat_248_01_05",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "抱歉抱歉，不过本丸里还醒着的可不少。"
+  },
+  {
+    "group_id": "chat_248_01_05",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "有夜里勤于加练的，也有大半夜挖坑的，想来是吵不醒谁。"
+  },
+  {
+    "group_id": "chat_248_01_05",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "不过您说的对，大晚上的大声唱歌不太好。"
+  },
+  {
+    "group_id": "chat_248_01_05",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "JUMP",
+    "text": "chat_248_01_04"
+  },
+  {
+    "group_id": "chat_248_01_06",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "被您看出来啦。"
+  },
+  {
+    "group_id": "chat_248_01_06",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "有些话，说出口叫作失言，可如果唱出来，就只算走了调。"
+  },
+  {
+    "group_id": "chat_248_01_06",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "……虽说我为做东照大权现的佩刀而自豪，"
+  },
+  {
+    "group_id": "chat_248_01_06",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "可越是指望他的人，越等不到回音。"
+  },
+  {
+    "group_id": "chat_248_01_06",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "那些人类供奉着的神明，真的能给人类回应吗？"
+  },
+  {
+    "group_id": "chat_248_01_06",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "……哎呀，唱走了调。见笑了。"
+  },
+  {
+    "group_id": "chat_248_01_06",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "这些话太沉重了。|chat_248_01_04"
+  },
+  {
+    "group_id": "chat_248_01_06",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "你是在埋怨谁吗？|chat_248_01_08"
+  },
+  {
+    "group_id": "chat_248_01_07",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "好。最后一段。"
+  },
+  {
+    "group_id": "chat_248_01_07",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "NONE",
+    "text": "他压低声音慢慢哼起来，清唱的声音飘散入夜色。"
+  },
+  {
+    "group_id": "chat_248_01_07",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "（哼唱）（不知道为什么，这摇篮曲的曲调很悲伤）\n……有谁会为我哭泣呢，只有松山上的知了……"
+  },
+  {
+    "group_id": "chat_248_01_07",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "NONE",
+    "text": "你听着听着，眼皮越来越沉。"
+  },
+  {
+    "group_id": "chat_248_01_07",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "JUMP",
+    "text": "chat_248_01_09"
+  },
+  {
+    "group_id": "chat_248_01_08",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "埋怨？不敢不敢。"
+  },
+  {
+    "group_id": "chat_248_01_08",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "神明若随随便便就会睁眼，天下也不至于换过那么多回主人。"
+  },
+  {
+    "group_id": "chat_248_01_08",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "可神明随便就睁眼，又如何保持神格呢？"
+  },
+  {
+    "group_id": "chat_248_01_08",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "……咳，失言了。这句，您就当没听见。"
+  },
+  {
+    "group_id": "chat_248_01_08",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "好，我不追问了。|chat_248_01_04"
+  },
+  {
+    "group_id": "chat_248_01_08",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "CHOICE",
+    "text": "好难懂，我听困了。|chat_248_01_09"
+  },
+  {
+    "group_id": "chat_248_01_09",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "好啦，今晚就到这里。"
+  },
+  {
+    "group_id": "chat_248_01_09",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "SELF",
+    "text": "晚安，主人。"
+  },
+  {
+    "group_id": "chat_248_01_09",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "cg",
+    "speaker": "",
+    "text": "#hide"
+  },
+  {
+    "group_id": "chat_248_01_09",
+    "actor_id": 248,
+    "min_love": 0,
+    "type": "sub",
+    "speaker": "NONE",
+    "text": "你闭上眼睛，远远地，似乎又听见了他的歌声。"
   }
 ]

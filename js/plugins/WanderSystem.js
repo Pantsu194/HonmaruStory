@@ -1,6 +1,6 @@
 /*:
  * @target MZ
- * @plugindesc [散步系统] v1.2 - 下午时段刀男外出散步 + 可交互对话
+ * @plugindesc [散步系统] v1.3 - 下午时段刀男外出散步 + 可交互对话
  * @author Codex
  *
   * @param dialogueWeight
@@ -96,6 +96,11 @@
  * - 读档后若某条分配里的角色状态已不是 5（例如转去内番/远征），该条作废；
  *   若整张表都失效，则退回随机重新分配，并清理孤儿 State=5。
  *
+ * -------- 七、角色 ID 扫描上限（v1.3） --------
+ * 角色扫描范围原为写死的 3~200，导致 ID > 200 的刀男（如 212 笹贯、248 三郎国宗）
+ * 永远进不了散步候选池，自然也不会被派出去散步。
+ * v1.3 起改为动态上限（$dataActors.length - 1），新增刀男无需再改插件。
+ *
  * ============================================================================
  *
  * @command assign
@@ -148,6 +153,8 @@
     const COMMON_MAP_ID = 0;
     const DIALOGUE_WEIGHT = parseFloat(PARAMS["dialogueWeight"] || "3.0");
     const PAIR_CHANCE = parseFloat(PARAMS["pairChance"] || "80");
+    // 角色 ID 扫描下限：1=审神者、2 为空槽，刀男从 3 号起
+    const ACTOR_ID_MIN = 3;
 
     // =========================================================================
     // 0. 数据结构
@@ -169,6 +176,15 @@
     WS._prevTime = -1;       // 上一次的 Var[7] 值
     // 刀帐位置/导航原始值缓存：{ actorId: { mapId, eventId } }
     WS._originalLocations = {};
+    // 角色 ID 扫描上限：动态跟随 Actors.json 的真实规模（长度 - 1）。
+    // v1.3 修正：此前写死 200，导致 ID > 200 的刀男（212 笹贯 / 248 三郎国宗）
+    // 永远进不了候选池、卡在 State=5 时也不会被兜底清理。
+    WS._actorIdMax = function() {
+        if (typeof $dataActors !== 'undefined' && $dataActors && $dataActors.length > 0) {
+            return $dataActors.length - 1;
+        }
+        return 299;
+    };
     // 散步目标地图 -> Map2 上对应门事件的映射（散步时更新刀帐导航用）
     WS._doorMap = {
         3: 1, 4: 4, 5: 7, 6: 8, 7: 9, 8: 10, 9: 11,
@@ -451,7 +467,8 @@
 
     WS._buildGlobalPool = function() {
         const idleActors = [];
-        for (let i = 3; i <= 200; i++) {
+        const maxActorId = this._actorIdMax();
+        for (let i = ACTOR_ID_MIN; i <= maxActorId; i++) {
             const actor = $gameActors.actor(i);
             if (!actor) continue;
             const state = $gameVariables.value(i + 100);
@@ -685,7 +702,8 @@
     // 保底清理：扫描所有角色，将任何卡在 State=5 的变量重置为 1
     WS._sweepStaleWanders = function() {
         var swept = 0;
-        for (var i = 3; i <= 200; i++) {
+        var maxActorId = this._actorIdMax();
+        for (var i = ACTOR_ID_MIN; i <= maxActorId; i++) {
             if ($gameActors.actor(i) && $gameVariables.value(i + 100) === 5) {
                 $gameVariables.setValue(i + 100, 1);
                 this._restoreToucho(i);

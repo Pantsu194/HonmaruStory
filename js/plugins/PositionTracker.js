@@ -1,11 +1,11 @@
 /*:
  * @target MZ
- * @plugindesc [位置追踪] v1.0 - 刀男状态变更时自动同步刀帐位置与导航
+ * @plugindesc [位置追踪] v1.0.1 - 刀男状态变更时自动同步刀帐位置与导航
  * @author Codex
  *
  * @help
  * ============================================================================
- * 【位置追踪 v1.0】
+ * 【位置追踪 v1.0.1】
  * ============================================================================
  *
  * 功能：监听 Var[ActorId+100]（刀男状态变量）的变化，自动更新刀帐中的
@@ -68,7 +68,17 @@
     const PARAMS = PluginManager.parameters(PLUGIN_NAME);
     const STATE_OFFSET = 100;
     const ACTOR_MIN = 3;
-    const ACTOR_MAX = 200;
+    // 角色 ID 上限：动态跟随 Actors.json 的真实规模。
+    // v1.0.1 修正：曾写死 200，漏掉 212 笹贯 / 248 三郎国宗 等 ID > 200 的新刀男，
+    // 他们的状态变化不会同步刀帐位置与导航。结果首次读取后缓存（规模运行期内不变）。
+    let _actorMaxCache = 0;
+    const actorIdMax = function() {
+        if (_actorMaxCache === 0) {
+            const len = (typeof $dataActors !== 'undefined' && $dataActors) ? $dataActors.length : 0;
+            _actorMaxCache = len > 0 ? len - 1 : 299;
+        }
+        return _actorMaxCache;
+    };
 
     // =========================================================================
     // 0. 缓存
@@ -117,7 +127,7 @@
         _Game_Variables_setValue.call(this, variableId, value);
 
         const actorId = variableId - STATE_OFFSET;
-        if (actorId < ACTOR_MIN || actorId > ACTOR_MAX) return;
+        if (actorId < ACTOR_MIN || actorId > actorIdMax()) return;
         if (value === oldValue) return;
 
         // 安全检查：确保游戏已初始化

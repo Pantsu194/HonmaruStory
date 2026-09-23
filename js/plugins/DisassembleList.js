@@ -1,74 +1,119 @@
-// 刀解清单 - 按钮交互增强版 for RPG Maker MZ
-// 版本：2.5.0 - 新增：数量输入窗口增加点击按钮 (+/-及确认取消)
+// 刀解清单 - 参数可配置版 for RPG Maker MZ
+// 版本：3.2.1
+// 变更：四素材分别配置 / 素材窗下移避开返回按钮 / 修复信息窗不刷新 / 列表只显示数量
+//       列表项只显示「物品名 ×数量」（去掉「持有」）
 // 作者：AI Assistant
 
 /*:
  * @target MZ
- * @plugindesc 【刀解清单】插件：实现一个可配置的刀解列表和素材回收功能。(v2.5.0 按钮增强版)
+ * @plugindesc 【刀解清单】插件：配方在插件参数里配置，四种素材可分别设置消耗。(v3.2.1 布局修复版)
  * @author AI Assistant
  *
+ * @param recipeList
+ * @text [配方] 刀解列表
+ * @desc 在这里添加可刀解的物品。回收量 = 该物品「锻造消耗」的一半（向下取整），四种素材等量。
+ * @type struct<DisassembleRecipe>[]
+ * @default ["{\"itemId\":\"50\",\"cost1\":\"10\",\"cost2\":\"10\",\"cost3\":\"10\",\"cost4\":\"10\",\"enabled\":\"true\"}","{\"itemId\":\"51\",\"cost1\":\"10\",\"cost2\":\"10\",\"cost3\":\"10\",\"cost4\":\"10\",\"enabled\":\"true\"}","{\"itemId\":\"52\",\"cost1\":\"10\",\"cost2\":\"10\",\"cost3\":\"10\",\"cost4\":\"10\",\"enabled\":\"true\"}","{\"itemId\":\"53\",\"cost1\":\"10\",\"cost2\":\"10\",\"cost3\":\"10\",\"cost4\":\"10\",\"enabled\":\"true\"}","{\"itemId\":\"54\",\"cost1\":\"10\",\"cost2\":\"10\",\"cost3\":\"10\",\"cost4\":\"10\",\"enabled\":\"true\"}","{\"itemId\":\"55\",\"cost1\":\"10\",\"cost2\":\"10\",\"cost3\":\"10\",\"cost4\":\"10\",\"enabled\":\"true\"}","{\"itemId\":\"56\",\"cost1\":\"15\",\"cost2\":\"15\",\"cost3\":\"15\",\"cost4\":\"15\",\"enabled\":\"true\"}","{\"itemId\":\"57\",\"cost1\":\"5\",\"cost2\":\"5\",\"cost3\":\"5\",\"cost4\":\"5\",\"enabled\":\"true\"}","{\"itemId\":\"58\",\"cost1\":\"30\",\"cost2\":\"30\",\"cost3\":\"30\",\"cost4\":\"30\",\"enabled\":\"true\"}","{\"itemId\":\"59\",\"cost1\":\"50\",\"cost2\":\"50\",\"cost3\":\"50\",\"cost4\":\"50\",\"enabled\":\"true\"}","{\"itemId\":\"60\",\"cost1\":\"30\",\"cost2\":\"30\",\"cost3\":\"30\",\"cost4\":\"30\",\"enabled\":\"true\"}","{\"itemId\":\"61\",\"cost1\":\"10\",\"cost2\":\"10\",\"cost3\":\"10\",\"cost4\":\"10\",\"enabled\":\"true\"}","{\"itemId\":\"62\",\"cost1\":\"30\",\"cost2\":\"30\",\"cost3\":\"30\",\"cost4\":\"30\",\"enabled\":\"true\"}","{\"itemId\":\"63\",\"cost1\":\"30\",\"cost2\":\"30\",\"cost3\":\"30\",\"cost4\":\"30\",\"enabled\":\"true\"}","{\"itemId\":\"65\",\"cost1\":\"5\",\"cost2\":\"5\",\"cost3\":\"5\",\"cost4\":\"5\",\"enabled\":\"true\"}"]
+ *
+ * @param materialVarIds
+ * @text [素材] 变量ID（逗号分隔）
+ * @desc 刀解回收进哪些变量，同时也决定顶部素材窗显示哪几种。默认 70,71,72,73。
+ * @type string
+ * @default 70,71,72,73
+ *
  * @help
- * **【注意】此版本已兼容 Item/Weapon/Armor 三种类型。**
+ * ============================================================
+ * 一、最近的改动
+ * ============================================================
+ * 1. 配方改为「插件管理器参数」配置：本插件的「[配方] 刀解列表」，
+ *    在编辑器里点开就能加 / 改 / 关，不用再改脚本文件。
+ * 2. 四种素材的消耗**分别配置**（素材1~4），回收量 = 各自消耗的一半（向下取整）；
+ *    哪种素材填 0 就哪种不回收。
+ * 3. 屏幕顶部常驻显示**素材数量**（1 行，排在返回按钮下方，不会被按钮挡住）。
+ * 4. 列表项只显示「物品名 ×数量」，「持有」两个字去掉了。
+ * 5. 光标移到物品上时，下方信息窗会显示该物品的刀解收益明细。
  *
- * 物品在列表中显示的四个必备条件：
- * 1. 物品ID必须有效。
- * 2. 必须使用 `addItems` 或 `addRange` 指令将其添加到**可刀解列表**中。
- * 3. 玩家的**背包中必须持有**该物品 (数量 > 0)。
- * 4. 必须使用 `setDisassembleResult` 指令为其设置了**有效的刀解结果**。
+ * ============================================================ * 二、怎么配置（编辑器内）
+ * ============================================================
+ * 插件管理器 → DisassembleList → 「[配方] 刀解列表」→ 添加条目：
  *
- * 使用方法：
- * 1. 在事件中，使用“插件命令”调用：DisassembleList open
+ *     物品ID     ：下拉选择物品（如「大和守安定·刀身」）
+ *     素材1 消耗 ：第 1 种素材（默认木炭）的锻造消耗，填 10 -> 回收 5
+ *     素材2 消耗 ：第 2 种素材（默认玉钢）的锻造消耗
+ *     素材3 消耗 ：第 3 种素材（默认冷却材）的锻造消耗
+ *     素材4 消耗 ：第 4 种素材（默认砥石）的锻造消耗
+ *     启用       ：开 / 关（关掉 = 该项不出现在清单里、也不产出素材）
  *
- * --- 列表设置 (设置哪些物品可以被刀解) ---
+ * 四种素材的消耗**可以各不相同**（例如 10 / 20 / 0 / 5），回收量按
+ * 「各自的一半，向下取整」算 —— 上例就是 5 / 10 / 0 / 2；
+ * 填 0 的那种素材不回收，也不会出现在信息窗里。
  *
- * @command addItems
- * @text [列表] 添加物品 (列表)
- * @desc 批量添加一个或多个物品ID到刀解列表。请使用物品/武器/防具数据库中的ID。
- * @arg items
- * @type string
- * @text 物品ID列表
- * @desc 用空格分隔的物品ID列表 (例如: 1 2 5)。
+ * 「素材1~4」与下面的「[素材] 变量ID」按顺序一一对应：
+ * 变量ID 填 70,71,72,73 时，素材1=木炭、素材2=玉钢、素材3=冷却材、素材4=砥石。
+ * 变量最多 4 个（顶部素材窗是 2 行 x 2 列）。 * 列表显示规则：配方**已启用** 且 背包**持有 > 0**，才会出现在清单里。
  *
- * @command addRange
- * @text [列表] 添加物品 (范围)
- * @desc 批量添加指定范围内的物品ID到刀解列表。
- * @arg start
- * @type number
- * @text 起始ID
- * @desc 范围的起始物品ID。
- * @arg end
- * @type number
- * @desc 范围的结束物品ID。
+ * ============================================================
+ * 三、界面
+ * ============================================================
+ * [素材窗] 屏幕顶部、返回按钮下方的一行（最多显示 4 种素材），常驻显示数量，
+ *          刀解后立刻刷新
+ * [信息窗] 物品名 + 「【刀解】回收素材」明细
+ * [列表窗] 2 列，每项「物品名 ×数量」
+ * [数量窗] 按钮 +1 / -1 / +10 / -10 / 确定 / 返回
+ *          键盘 ↑↓ = ±10，←→ = ±1，OK / Cancel 同确定 / 返回
  *
- * @command removeItems
- * @text [列表] 移除物品
- * @desc 从刀解列表中移除一个或多个物品ID。
- * @arg items
- * @type string
- * @text 物品ID列表
- * @desc 用空格分隔的物品ID列表 (例如: 1 2 5)。
- *
- * @command clearList
- * @text [列表] 清空列表
- * @desc 清空所有可刀解的物品。
- *
- * --- 结果设置 (设置刀解后获得什么素材) ---
- *
- * @command setDisassembleResult
- * @text [结果] 设置刀解结果
- * @desc 设置单个物品刀解后获得的素材（变量）和数量。
- * @arg item
- * @type number
- * @text 物品ID
- * @desc 物品/武器/防具数据库中的ID。
- * @arg results
- * @type string
- * @text 获得结果 (变量ID,数量 ...)
- * @desc 格式: "变量ID1,数量1 变量ID2,数量2"。例如: "10,5 11,2"
+ * ============================================================
+ * 四、怎么用
+ * ============================================================
+ * 事件里用「插件命令」调用：DisassembleList open
  *
  * @command open
  * @text 打开刀解清单
  * @desc 打开刀解清单界面。
+ */
+
+/*~struct~DisassembleRecipe:
+ * @param itemId
+ * @text 物品ID
+ * @desc 可刀解的物品（选刀身道具即可）。
+ * @type item
+ * @default 50
+ *
+ * @param cost1
+ * @text 素材1 消耗
+ * @desc 第 1 种素材的锻造消耗（对应「[素材] 变量ID」第 1 个，默认木炭）。回收量 = 它的一半，向下取整。
+ * @type number
+ * @min 0
+ * @default 10
+ *
+ * @param cost2
+ * @text 素材2 消耗
+ * @desc 第 2 种素材的锻造消耗（默认玉钢）。回收量 = 它的一半，向下取整。
+ * @type number
+ * @min 0
+ * @default 10
+ *
+ * @param cost3
+ * @text 素材3 消耗
+ * @desc 第 3 种素材的锻造消耗（默认冷却材）。回收量 = 它的一半，向下取整。
+ * @type number
+ * @min 0
+ * @default 10
+ *
+ * @param cost4
+ * @text 素材4 消耗
+ * @desc 第 4 种素材的锻造消耗（默认砥石）。回收量 = 它的一半，向下取整。
+ * @type number
+ * @min 0
+ * @default 10
+ *
+ * @param enabled
+ * @text 启用
+ * @desc 关闭后该项不会出现在刀解列表里，也不产出素材。
+ * @type boolean
+ * @on 启用
+ * @off 关闭
+ * @default true
  */
 
 (function() {
@@ -82,37 +127,129 @@
     }
     
     // =========================================================================
-    // 1. 游戏数据存储 ($gameSystem)
+    // 1. 配方与素材（来自插件管理器参数）
     // =========================================================================
-    
-    const _Game_System_initialize = Game_System.prototype.initialize;
-    Game_System.prototype.initialize = function() {
-        _Game_System_initialize.call(this);
-        this.initDisassembleSystem();
-    };
+    // 【v3.1.0】配方改由编辑器里的插件参数配置：
+    //   「[配方] 刀解列表」 -> 每条：物品ID / 锻造消耗 / 启用
+    //   「[素材] 变量ID」   -> 例如 70,71,72,73
+    // 回收量规则：= 锻造消耗的一半，向下取整（floor），四种素材等量。
+    // 若参数读不到 / 被清空，则回退到下面的默认表（与游戏当前数值一致）。
+    const PARAMS = PluginManager.parameters(PLUGIN_NAME);
 
-    Game_System.prototype.initDisassembleSystem = function() {
-        if (!this._disassembleList) {
-            this._disassembleList = [];
+    const DEFAULT_MATERIAL_VAR_IDS = [70, 71, 72, 73];
+    const DEFAULT_RECIPES = [
+        // [物品ID, [素材1, 素材2, 素材3, 素材4] 的锻造消耗]
+        [50, [10, 10, 10, 10]], [51, [10, 10, 10, 10]], [52, [10, 10, 10, 10]],
+        [53, [10, 10, 10, 10]], [54, [10, 10, 10, 10]], [55, [10, 10, 10, 10]],
+        [56, [15, 15, 15, 15]], [57, [5, 5, 5, 5]],     [58, [30, 30, 30, 30]],
+        [59, [50, 50, 50, 50]], [60, [30, 30, 30, 30]], [61, [10, 10, 10, 10]],
+        [62, [30, 30, 30, 30]], [63, [30, 30, 30, 30]], [65, [5, 5, 5, 5]]
+    ];
+
+
+    // 把 MZ 的 struct 数组参数（字符串数组，或已解析的数组）拆成对象数组
+    function parseStructArray(raw) {
+        let arr = raw;
+        if (typeof arr === "string") {
+            try {
+                arr = JSON.parse(arr);
+            } catch (e) {
+                return [];
+            }
         }
-        if (!this._disassembleResults) {
-            this._disassembleResults = {};
+        if (!Array.isArray(arr)) {
+            return [];
         }
-    };
-    
-    Game_System.prototype.getDisassembleList = function() {
-        if (!this._disassembleList) {
-            this.initDisassembleSystem();
+        return arr.map(function(entry) {
+            if (typeof entry === "string") {
+                try {
+                    return JSON.parse(entry);
+                } catch (e) {
+                    return null;
+                }
+            }
+            return entry;
+        }).filter(function(entry) {
+            return entry && typeof entry === "object";
+        });
+    }
+
+    function parseMaterialVarIds(raw) {
+        const ids = String(raw || "")
+            .split(",")
+            .map(function(s) { return Number(String(s).trim()); })
+            .filter(function(n) { return n > 0; });
+        return ids.length > 0 ? ids : DEFAULT_MATERIAL_VAR_IDS.slice();
+    }
+
+    function parseRecipes(raw) {
+        const table = {};
+        parseStructArray(raw).forEach(function(entry) {
+            const itemId = Number(entry.itemId);
+            if (!(itemId > 0)) {
+                return;
+            }
+            // 四种素材分别读；兼容早期只写一个 cost 的写法（那时四种用同一个值）
+            const legacy = Number(entry.cost);
+            const costs = [entry.cost1, entry.cost2, entry.cost3, entry.cost4].map(function(v) {
+                const n = Number(v);
+                return n > 0 ? n : (legacy > 0 ? legacy : 0);
+            });
+            if (costs.every(function(c) { return !(c > 0); })) {
+                return;     // 四种都没填 -> 视为无效条目
+            }
+            table[itemId] = {
+                costs: costs,
+                // MZ 编辑器写回的布尔可能是 "true" / "false" 字符串，这里统一处理
+                enabled: String(entry.enabled) !== "false"
+            };
+        });
+        if (Object.keys(table).length > 0) {
+            return table;
         }
-        return this._disassembleList;
-    };
-    
-    Game_System.prototype.getDisassembleResults = function() {
-        if (!this._disassembleResults) {
-            this.initDisassembleSystem();
+        const fallback = {};
+        DEFAULT_RECIPES.forEach(function(pair) {
+            fallback[pair[0]] = { costs: pair[1].slice(), enabled: true };
+        });
+        return fallback;
+    }
+
+
+    const MATERIAL_VAR_IDS = parseMaterialVarIds(PARAMS.materialVarIds);
+    const RECIPES = parseRecipes(PARAMS.recipeList);
+
+    // 回收量 = 锻造消耗的一半，向下取整
+    function disassembleGain(cost) {
+        return Math.floor(Number(cost) / 2);
+    }
+
+    // 某物品的刀解结果 -> [{ varId, count }, ...]；未配置 / 已关闭 返回 null
+    // 第 i 种素材对应「[素材] 变量ID」里的第 i 个变量，
+    // 各自的回收量 = 该种素材锻造消耗的一半（向下取整），互不影响；
+    // 消耗填 0（或算出来是 0）的素材不会出现在结果里。
+    function getRecipeResults(itemId) {
+        const recipe = RECIPES[Number(itemId)];
+        if (!recipe || recipe.enabled === false) {
+            return null;
         }
-        return this._disassembleResults;
-    };
+        const results = [];
+        MATERIAL_VAR_IDS.forEach(function(varId, index) {
+            const gain = disassembleGain(recipe.costs[index] || 0);
+            if (gain > 0) {
+                results.push({ varId: varId, count: gain });
+            }
+        });
+        return results.length > 0 ? results : null;
+    }
+
+
+    // 全部已启用的配方物品ID（升序）
+    function enabledRecipeIds() {
+        return Object.keys(RECIPES)
+            .map(function(id) { return Number(id); })
+            .filter(function(id) { return RECIPES[id].enabled !== false; })
+            .sort(function(a, b) { return a - b; });
+    }
     
     // 辅助函数：检查物品 ID，返回 Item/Weapon/Armor 对象 
     function getDisassembleItem(id) {
@@ -132,31 +269,6 @@
         return null;
     }
     
-    Game_System.prototype.addDisassembleItem = function(itemId) {
-        const id = Number(itemId);
-        const list = this.getDisassembleList();
-        if (getDisassembleItem(id) && !list.includes(id)) {
-            list.push(id);
-        }
-    };
-    
-    Game_System.prototype.removeDisassembleItem = function(itemId) {
-        const id = Number(itemId);
-        const list = this.getDisassembleList();
-        const index = list.indexOf(id);
-        if (index >= 0) {
-            list.splice(index, 1);
-        }
-    };
-    
-    Game_System.prototype.clearDisassembleList = function() {
-        this._disassembleList = [];
-    };
-    
-    Game_System.prototype.setDisassembleResult = function(itemId, results) {
-        const id = Number(itemId);
-        this.getDisassembleResults()[id] = results; 
-    };
 
     // =========================================================================
     // 2. 插件命令注册
@@ -166,64 +278,8 @@
         SceneManager.push(Scene_Disassemble);
     });
     
-    PluginManager.registerCommand(PLUGIN_NAME, "addItems", function(args) {
-        const items = args.items.split(' ');
-        items.forEach(itemString => {
-            const id = Number(itemString);
-            if (getDisassembleItem(id)) {
-                $gameSystem.addDisassembleItem(id);
-            } else {
-                console.warn(`[DisassembleList WARNING] 无法识别的物品ID "${itemString}" 或非有效类型。`);
-            }
-        });
-    });
-    
-    PluginManager.registerCommand(PLUGIN_NAME, "addRange", function(args) {
-        const start = Number(args.start);
-        const end = Number(args.end);
-        for (let i = start; i <= end; i++) {
-            if (getDisassembleItem(i)) {
-                $gameSystem.addDisassembleItem(i);
-            }
-        }
-    });
-
-    PluginManager.registerCommand(PLUGIN_NAME, "removeItems", function(args) {
-        const items = args.items.split(' ');
-        items.forEach(itemString => {
-            const id = Number(itemString);
-            $gameSystem.removeDisassembleItem(id);
-        });
-    });
-    
-    PluginManager.registerCommand(PLUGIN_NAME, "clearList", function(args) {
-        $gameSystem.clearDisassembleList();
-    });
-    
-    PluginManager.registerCommand(PLUGIN_NAME, "setDisassembleResult", function(args) {
-        const itemId = Number(args.item);
-        const resultsString = args.results;
-        
-        if (!getDisassembleItem(itemId)) {
-            console.warn(`[DisassembleList WARNING] 无法识别的物品ID "${args.item}" 或非有效类型。`);
-            return;
-        }
-        
-        const parsedResults = resultsString.split(' ').map(pair => {
-            const parts = pair.split(',');
-            if (parts.length === 2) {
-                return { varId: Number(parts[0]), count: Number(parts[1]) };
-            }
-            return null;
-        }).filter(r => r && r.varId > 0 && r.count > 0);
-        
-        if (parsedResults.length > 0) {
-            $gameSystem.setDisassembleResult(itemId, parsedResults);
-        } else {
-            console.warn(`[DisassembleList WARNING] 结果格式错误 "${resultsString}"，请使用 "变量ID,数量" 格式。`);
-        }
-    });
-
+    // 【v3.0.0】addItems / addRange / removeItems / clearList / setDisassembleResult
+    // 五条命令已移除：配方改为插件内 RECIPES 表（见第 1 节），不再由事件配置。
 
     // =========================================================================
     // 3. 场景定义 - Scene_Disassemble (核心逻辑)
@@ -256,51 +312,58 @@
 
     Scene_Disassemble.prototype.create = function() {
         Scene_MenuBase.prototype.create.call(this);
-        console.log("[Disassemble DEBUG] Scene_Disassemble.create: 开始创建窗口.");
 
         // 1. 定义公共尺寸
         const mainW = this.mainAreaWidth();
-        
-        // Help Window Height (标准 2 行)
-        this.createHelpWindow(); 
-        const helpH = this._helpWindow.height; 
+
+        // 【v3.1.0】顶部窗口改为「素材数量窗」（不再是帮助窗）
+        // 【v3.2.1】它的 y 不再是 0（要避开右上角的返回按钮），所以下面用「底边」定位
+        this.createMaterialWindow();
+        const materialBottom = this._materialWindow.y + this._materialWindow.height;
 
         // Info Window 区域高度: 4 行 (物品名1 + 提示1 + 素材2)
-        const infoH = this.calcWindowHeight(4, false); 
-        
-        // 2. 创建 Info Window 
-        const infoRect = new Rectangle(0, helpH, mainW, infoH);
+        const infoH = this.calcWindowHeight(4, false);
+
+        // 2. 创建 Info Window
+        const infoRect = new Rectangle(0, materialBottom, mainW, infoH);
         this._infoWindow = new Window_DisassembleInfo(infoRect);
         this.addWindow(this._infoWindow);
-        console.log("[Disassemble DEBUG] Info Window (已扩大) 创建成功.");
 
         // 3. 计算 List Window 尺寸
-        const listY = helpH + infoH; 
-        const listH = this.mainAreaBottom() - listY; 
-        
+        const listY = materialBottom + infoH;
+        const listH = this.mainAreaBottom() - listY;
+
         // 4. 创建 List Window
         const listRect = new Rectangle(0, listY, mainW, listH);
         this._listWindow = new Window_DisassembleList(listRect);
-        this._listWindow.setHelpWindow(this._helpWindow);
         // 绑定到 commandDisassemble (开启数量输入)
-        this._listWindow.setHandler("ok", this.commandDisassemble.bind(this)); 
+        this._listWindow.setHandler("ok", this.commandDisassemble.bind(this));
         this._listWindow.setHandler("cancel", this.popScene.bind(this));
         this.addWindow(this._listWindow);
-        console.log("[Disassemble DEBUG] List Window 创建成功.");
-        
+
         // 5. 创建数量输入窗口 (初始隐藏)
         this.createNumberWindow();
 
         // 6. 最终化
         this._listWindow.setInfoWindow(this._infoWindow);
         this._infoWindow.refresh();
-        
-        this._listWindow.refresh(); 
-        console.log("[Disassemble DEBUG] List Window 强制刷新完成。");
+
+        this._listWindow.refresh();
 
         this._listWindow.activate();
         this._listWindow.select(0);
-        console.log("[Disassemble DEBUG] Scene_Disassemble.create: 窗口激活完成.");
+    };
+
+    // 【v3.2.1】顶部素材窗的矩形集中在这里，方便校验脚本核对。
+    // y 从返回按钮区下方开始（buttonAreaBottom()），高度压成 1 行：
+    // 这样右上角「返回」按钮所在的那一行留空，不会遮住素材数量。
+    Scene_Disassemble.prototype.materialWindowRect = function() {
+        return new Rectangle(0, this.buttonAreaBottom(), Graphics.boxWidth, this.calcWindowHeight(1, false));
+    };
+
+    Scene_Disassemble.prototype.createMaterialWindow = function() {
+        this._materialWindow = new Window_DisassembleMaterials(this.materialWindowRect());
+        this.addWindow(this._materialWindow);
     };
     
     Scene_Disassemble.prototype.createNumberWindow = function() {
@@ -324,7 +387,6 @@
         const item = this._listWindow.item();
         const maxCount = $gameParty.numItems(item);
         
-        console.log(`[Disassemble DEBUG] commandDisassemble: 尝试刀解物品ID ${item ? item.id : '无'}，持有数量 ${maxCount}`);
 
         if (item && maxCount > 0) {
             // 数量选择
@@ -334,19 +396,16 @@
             // 确保窗口显示且立即激活
             this._numberWindow.show(); 
             this._numberWindow.activate();
-            console.log(`[Disassemble DEBUG] commandDisassemble: 数量输入窗口已显示并激活。`);
         } else {
             // 不可刀解，播放错误音效并继续保持激活
             SoundManager.playBuzzer();
             this._listWindow.activate();
-            console.log(`[Disassemble DEBUG] commandDisassemble: 物品无效或数量不足，操作被拒绝。`);
         }
     };
     
     Scene_Disassemble.prototype.onNumberInputOk = function() {
         const item = this._numberWindow.item();
         const count = this._numberWindow.number();
-        console.log(`[Disassemble DEBUG] onNumberInputOk: 确认刀解 ${count} 个 ${item.name}`);
 
 
         this.performDisassemble(item, count); // 执行刀解核心逻辑
@@ -358,7 +417,7 @@
         // 刷新所有窗口
         this._listWindow.refresh();
         this._infoWindow.refresh();
-        this._helpWindow.clear();
+        this._materialWindow.refresh();
 
         // 重新选择当前项 (或下一个有效项)
         const newIndex = this._listWindow.index().clamp(0, this._listWindow.maxItems() - 1);
@@ -378,7 +437,6 @@
         this._numberWindow.hide(); 
         this._numberWindow.deactivate();
         this._listWindow.activate();
-        console.log(`[Disassemble DEBUG] onNumberInputCancel: 取消操作，返回列表激活。`);
     };
 
     // ** 核心刀解逻辑 **
@@ -387,7 +445,7 @@
         $gameParty.loseItem(item, count);
         
         // 2. 获取回收结果
-        const results = $gameSystem.getDisassembleResults()[item.id];
+        const results = getRecipeResults(item.id);
         
         // 3. 增加素材变量
         if (results) {
@@ -400,18 +458,56 @@
         // 4. 播放成功音效
         SoundManager.playShop();
         
-        // 5. 显示提示 (可选：使用 Help Window 提示)
-        this._helpWindow.setText(`刀解成功！消耗了 ${count} 个 ${item.name}，获得了对应素材。`);
+        // 5. 刷新顶部素材数量窗（刀解结果直接反映在数字上）
+        if (this._materialWindow) {
+            this._materialWindow.refresh();
+        }
     };
 
 
-    Scene_Disassemble.prototype.helpWindowRect = Scene_MenuBase.prototype.helpWindowRect;
-    Scene_Disassemble.prototype.createHelpWindow = Scene_MenuBase.prototype.createHelpWindow;
+    // 【v3.1.0】屏幕顶部不再是帮助窗，而是常驻的「素材数量窗」，
+    // 位置由 materialWindowRect() 给出（见上方 create 附近），
+    // 因此不再需要覆盖 helpWindowRect / createHelpWindow。
 
     
     // =========================================================================
     // 4. 窗口类定义
     // =========================================================================
+
+    // ** Window_DisassembleMaterials（顶部素材数量窗，v3.1.0 新增）**
+    function Window_DisassembleMaterials() { this.initialize.apply(this, arguments); }
+    Window_DisassembleMaterials.prototype = Object.create(Window_Base.prototype);
+    Window_DisassembleMaterials.prototype.constructor = Window_DisassembleMaterials;
+    Window_DisassembleMaterials.prototype.initialize = function(rect) {
+        Window_Base.prototype.initialize.call(this, rect);
+        this.refresh();
+    };
+    Window_DisassembleMaterials.prototype.refresh = function() {
+        if (!this.contents) return;
+        this.contents.clear();
+        const varIds = MATERIAL_VAR_IDS;
+        if (varIds.length === 0) return;
+
+        // 【v3.2.1】单行横排（窗口高度只有 1 行，让开右上角的返回按钮）
+        const cellW = Math.floor(this.innerWidth / varIds.length);
+        const labels = varIds.map(function(varId) {
+            return ($dataSystem.variables[varId] || `变量${varId}`) + "：";
+        });
+        let labelW = 0;
+        labels.forEach(function(text) {
+            labelW = Math.max(labelW, this.textWidth(text));
+        }, this);
+        labelW = Math.min(labelW + 4, Math.floor(cellW * 0.6));
+        const valueW = Math.max(0, cellW - labelW - 8);
+
+        varIds.forEach((varId, index) => {
+            const x = index * cellW;
+            this.changeTextColor(ColorManager.systemColor());
+            this.drawText(labels[index], x, 0, labelW, "left");
+            this.resetTextColor();
+            this.drawText($gameVariables.value(varId), x + labelW, 0, valueW, "right");
+        });
+    };
     
     // ** Window_DisassembleGold (空方法，防止出错) **
     function Window_DisassembleGold() { this.initialize.apply(this, arguments); }
@@ -451,7 +547,7 @@
             const rect = lineRect(0);
             this.drawItemName(this._item, rect.x, rect.y, rect.width);
             this.drawText("【刀解】回收素材：", rect.x, rect.y + this.lineHeight(), rect.width);
-            const results = $gameSystem.getDisassembleResults()[this._item.id];
+            const results = getRecipeResults(this._item.id);
             
             if (results && results.length > 0) {
                 // 素材两列显示逻辑
@@ -487,7 +583,7 @@
                 this.drawText("（无法刀解 / 未配置结果）", rect.x, rect.y + this.lineHeight() * 2, rect.width);
             }
         } else {
-            this.drawText("选择一个物品查看详情。", 0, 0, this.innerWidth, 'center');
+            this.drawText("把光标移到物品上，即可查看刀解收益。", 0, 0, this.innerWidth, 'center');
         }
     };
     Window_DisassembleInfo.prototype.drawItemName = Window_Base.prototype.drawItemName;
@@ -507,20 +603,14 @@
     Window_DisassembleList.prototype.maxCols = function() { return 2; };
     Window_DisassembleList.prototype.maxItems = function() { return this._data ? this._data.length : 1; }; 
     Window_DisassembleList.prototype.makeItemList = function() {
-        const registeredIds = $gameSystem.getDisassembleList();
-        
-        // 1. 过滤已注册的ID，并转换为 Item/Weapon/Armor 对象
-        const itemObjects = registeredIds.map(id => getDisassembleItem(id)).filter(item => item !== null);
+        // v3.0.0：不再读事件配置的 $gameSystem 数据，
+        // 直接遍历插件内的配方表 —— 「默认全开 + 背包持有才显示」。
+        this._data = enabledRecipeIds()
+            .map(function(id) { return getDisassembleItem(id); })
+            .filter(function(item) {
+                return item !== null && $gameParty.numItems(item) > 0;
+            });
 
-        // 2. 过滤玩家实际持有的 (拥有数量 > 0) 且有刀解结果的物品
-        this._data = itemObjects.filter(item => {
-            const itemId = item.id;
-            const hasResult = $gameSystem.getDisassembleResults()[itemId];
-            const numHeld = $gameParty.numItems(item); 
-            
-            return hasResult && numHeld > 0; 
-        });
-        
         if (this._data.length === 0) {
             this._data.push(null);
         }
@@ -536,26 +626,38 @@
     Window_DisassembleList.prototype.drawItem = function(index) {
         const item = this._data[index];
         const rect = this.itemRect(index);
-        
+
         if (!item) {
             if (index === 0) {
                 this.drawText("（没有可以刀解的物品）", rect.x, rect.y, rect.width * 2, 'center');
             }
             return;
         }
-        
-        const number = $gameParty.numItems(item);
 
-        this.drawItemName(item, rect.x, rect.y, rect.width - 150);
-        this.drawText("持有:", rect.x + rect.width - 150, rect.y, 50, 'right');
-        this.drawText(number, rect.x + rect.width - 100, rect.y, 50, 'right');
+        const number = $gameParty.numItems(item);
+        // 【v3.1.0】只留出「×数量」的宽度（原来给「持有:」留了 150，挤掉了名字）
+        const numWidth = 80;
+
+        this.drawItemName(item, rect.x, rect.y, rect.width - numWidth);
+        this.resetTextColor();
+        this.drawText("×" + number, rect.x + rect.width - numWidth, rect.y, numWidth, 'right');
     };
     
     Window_DisassembleList.prototype.updateHelp = function() {
-        const item = this.item();
-        this.setHelpWindowItem(item);
+        // 【v3.1.0】顶部不再是帮助窗，这里只同步下方的信息窗
         if (this._infoWindow) {
-            this._infoWindow.setItem(item);
+            this._infoWindow.setItem(this.item());
+        }
+    };
+
+    // 【v3.2.1 修复】MZ 的 Window_Selectable.callUpdateHelp()（rmmz_windows.js L1339）写着
+    //   if (this.active && this._helpWindow) { this.updateHelp(); }
+    // 而 v3.1.0 起本场景不再创建帮助窗 -> _helpWindow 是 undefined ->
+    // updateHelp() 永远不执行，信息窗就一直停在初始文案。
+    // 这里绕开那道判断：窗口激活就刷新信息窗。
+    Window_DisassembleList.prototype.callUpdateHelp = function() {
+        if (this.active) {
+            this.updateHelp();
         }
     };
     
@@ -803,8 +905,19 @@
     
     window.Scene_Disassemble = Scene_Disassemble;
     window.Window_DisassembleGold = Window_DisassembleGold;
+    window.Window_DisassembleMaterials = Window_DisassembleMaterials;
     window.Window_DisassembleInfo = Window_DisassembleInfo;
     window.Window_DisassembleList = Window_DisassembleList;
     window.Window_DisassembleNumberInput = Window_DisassembleNumberInput;
+
+    // 供 tools/disassemble-recipe-check.js 与游戏内调试查看
+    window.DisassembleListConfig = {
+        params: PARAMS,
+        recipes: RECIPES,
+        materialVarIds: MATERIAL_VAR_IDS,
+        gainOf: disassembleGain,
+        resultsOf: getRecipeResults,
+        enabledIds: enabledRecipeIds
+    };
 
 })();
